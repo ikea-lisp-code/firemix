@@ -166,12 +166,12 @@
     		"type": "linear"
     	}
     ],
-    "labels_enable": true, 
-    "locked": false, 
+    "labels_enable": false, 
+    "locked": true, 
     "name": "New", 
     "strand-settings": [
         {
-            "color-mode": "BGR8", 
+            "color-mode": "RGB8", 
             "enabled": true, 
             "id": 0
         }
