@@ -1,0 +1,179 @@
+{
+    "backdrop_enable": false, 
+    "backdrop_filename": "light_dome.png", 
+    "center": [320, 320], 
+    "extents": [640, 640],
+    "file-type": "scene", 
+    "fixtures": [
+ 	{
+    		"address": 0, 
+    		"pixels": 1, 
+    		"pos1": [320, 390], 
+    		"pos2": [320, 390], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 1, 
+    		"pixels": 1, 
+    		"pos1": [470, 360], 
+    		"pos2": [470, 360], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 2, 
+    		"pixels": 1, 
+    		"pos1": [320, 330], 
+    		"pos2": [320, 330], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 3, 
+    		"pixels": 1, 
+    		"pos1": [380, 330], 
+    		"pos2": [380, 330], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 4, 
+    		"pixels": 1, 
+    		"pos1": [440, 330], 
+    		"pos2": [440, 330], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 5, 
+    		"pixels": 1, 
+    		"pos1": [410, 300], 
+    		"pos2": [410, 300], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 6, 
+    		"pixels": 1, 
+    		"pos1": [440, 270], 
+    		"pos2": [440, 270], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 7, 
+    		"pixels": 1, 
+    		"pos1": [350, 240], 
+    		"pos2": [350, 240], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 8, 
+    		"pixels": 1, 
+    		"pos1": [320, 210], 
+    		"pos2": [320, 210], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 9, 
+    		"pixels": 1, 
+    		"pos1": [440, 210], 
+    		"pos2": [440, 210], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 10, 
+    		"pixels": 1, 
+    		"pos1": [350, 180], 
+    		"pos2": [350, 180], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 11, 
+    		"pixels": 1, 
+    		"pos1": [440, 180], 
+    		"pos2": [440, 180], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 12, 
+    		"pixels": 1, 
+    		"pos1": [470, 180], 
+    		"pos2": [470, 180], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 13, 
+    		"pixels": 1, 
+    		"pos1": [320, 150], 
+    		"pos2": [320, 150], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 14, 
+    		"pixels": 1, 
+    		"pos1": [380, 150], 
+    		"pos2": [380, 150], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 15, 
+    		"pixels": 1, 
+    		"pos1": [410, 150], 
+    		"pos2": [410, 150], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 16, 
+    		"pixels": 1, 
+    		"pos1": [440, 150], 
+    		"pos2": [440, 150], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 17, 
+    		"pixels": 1, 
+    		"pos1": [350, 120], 
+    		"pos2": [350, 120], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 18, 
+    		"pixels": 1, 
+    		"pos1": [380, 90], 
+    		"pos2": [380, 90], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+ 	{
+    		"address": 19, 
+    		"pixels": 1, 
+    		"pos1": [410, 90], 
+    		"pos2": [410, 90], 
+    		"strand": 0, 
+    		"type": "linear"
+    	}
+    ],
+    "labels_enable": true, 
+    "locked": false, 
+    "name": "New", 
+    "strand-settings": [
+        {
+            "color-mode": "BGR8", 
+            "enabled": true, 
+            "id": 0
+        }
+    ]
+}
