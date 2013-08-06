@@ -8,8 +8,16 @@
  	    {
     		"address": 0, 
     		"pixels": 1, 
-    		"pos1": [320, 390], 
-    		"pos2": [320, 390], 
+    		"pos1": [320, 320], 
+    		"pos2": [320, 320], 
+    		"strand": 0, 
+    		"type": "linear"
+    	},
+        {
+    		"address": 1, 
+    		"pixels": 1, 
+    		"pos1": [340, 340], 
+    		"pos2": [340, 340], 
     		"strand": 0, 
     		"type": "linear"
     	}
