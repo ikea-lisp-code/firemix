@@ -1,0 +1,27 @@
+{
+    "backdrop_enable": false, 
+    "backdrop_filename": "light_dome.png", 
+    "center": [320, 320], 
+    "extents": [640, 640],
+    "file-type": "scene", 
+    "fixtures": [
+ 	    {
+    		"address": 0, 
+    		"pixels": 1, 
+    		"pos1": [320, 390], 
+    		"pos2": [320, 390], 
+    		"strand": 0, 
+    		"type": "linear"
+    	}
+    ],
+    "labels_enable": false, 
+    "locked": true, 
+    "name": "Single", 
+    "strand-settings": [
+        {
+            "color-mode": "RGB8", 
+            "enabled": true, 
+            "id": 0
+        }
+    ]
+}
