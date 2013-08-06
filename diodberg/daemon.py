@@ -49,7 +49,6 @@ class DMXDaemon(QtCore.QObject):
             datalen = (packet[3] << 8) + packet[2]
             data = packet[4:]
             # Bulk Strand Set
-            print hex(cmd)
             if cmd == 0x10 or cmd == 0x20:
                 assert datalen <= 512
                 self.__serial.send_dmx(strand, bytearray(data))
