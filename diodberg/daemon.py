@@ -22,7 +22,6 @@ class DMXDaemon(QtCore.QObject):
         self.__socket = None
         self.__serial = serial_port
         
-
     def init_socket(self):
         self.__socket = QtNetwork.QUdpSocket(self)
         self.__socket.readyRead.connect(self.read_datagrams)
@@ -39,26 +38,20 @@ class DMXDaemon(QtCore.QObject):
             self.process_command(packet)
 
     def process_command(self, packet):
-        if len(packet) < 3:
-            log.error("Malformed packet!")
-            print packet
-            return
-        while True:
-            strand = packet[0]
-            cmd = packet[1]
-            datalen = (packet[3] << 8) + packet[2]
-            data = packet[4:]
-            # Bulk Strand Set
-            if cmd == 0x10 or cmd == 0x20:
-                assert datalen <= 512
-                self.__serial.send_dmx(strand, bytearray(data))
-            elif cmd < 0x27 and cmd > 0x20:
-                print hex(cmd)
-                raise NotImplementedError
-            elif len(packet) > (4 + datalen):
-                packet = packet[4 + datalen:]
-            else:
-                break
+        strand = packet[0]
+        cmd = packet[1]
+        datalen = (packet[3] << 8) + packet[2]
+        data = packet[4:]
+        # Bulk Strand Set
+        if cmd == 0x10 or cmd == 0x20:
+            assert datalen <= 512
+            print data
+            self.__serial.send_dmx(strand, bytearray(data))
+        elif cmd < 0x27 and cmd > 0x20:
+            print hex(cmd)
+            raise NotImplementedError
+        else: 
+            raise NotImplementedError
 
 
 class DMXSerialRenderer(object):
