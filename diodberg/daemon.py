@@ -45,7 +45,6 @@ class DMXDaemon(QtCore.QObject):
         # Bulk Strand Set
         if cmd == 0x10 or cmd == 0x20:
             assert datalen <= 512
-            print data
             self.__serial.send_dmx(strand, bytearray(data))
         elif cmd < 0x27 and cmd > 0x20:
             print hex(cmd)
