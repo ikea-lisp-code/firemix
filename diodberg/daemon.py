@@ -34,18 +34,15 @@ class DMXDaemon(QtCore.QObject):
             datagram = QtCore.QByteArray()
             datagram.resize(self.__socket.pendingDatagramSize())
             (datagram, sender, sport) = self.__socket.readDatagram(datagram.size())
-            packet = [ord(c) for c in datagram.data()]
-            self.process_command(packet)
+            self.process_command(datagram)
 
     def process_command(self, packet):
-        strand = packet[0]
-        cmd = packet[1]
-        datalen = (packet[3] << 8) + packet[2]
+        strand = ord(packet[0])
+        cmd = ord(packet[1])
         data = packet[4:]
         # Bulk Strand Set
         if cmd == 0x10 or cmd == 0x20:
-            assert datalen <= 512
-            self.__serial.send_dmx(strand, bytearray(data))
+            self.__serial.send_dmx(strand, data)
         elif cmd < 0x27 and cmd > 0x20:
             print hex(cmd)
             raise NotImplementedError
