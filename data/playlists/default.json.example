@@ -233,22 +233,7 @@
                 "off-color": "[0.6, 0.2, 1.0]", 
                 "on-color": "[0.1, 1.0, 1.0]"
             }
-        }, 
-        {
-            "classname": "Dragons", 
-            "name": "dragons small red", 
-            "params": {
-                "alive-color": "[0.0, 0.5, 1.0]", 
-                "birth-rate": "0.1", 
-                "dead-color": "[0.0, 0.0, 1.0]", 
-                "explode-color": "(0.0, 1.0, 1.0)", 
-                "growth-rate": "20.0", 
-                "growth-time": "0.5", 
-                "pop-limit": "20", 
-                "tail-color": "[0.2, 0.5, 1.0]", 
-                "tail-persist": "0.5"
-            }
-        }, 
+        },
         {
             "classname": "SimplexNoise", 
             "name": "noise slow", 
