@@ -36,14 +36,16 @@ def write_dmx(baudrate = 115200, buf = bytearray([255, 255, 255])):
     port.close()
 
 
-def probe(num_addresses = 15):
-    empty = bytearray([0]*512)
+def probe(num_addresses = 100, sleep = 5):
+    write_dmx(buf = bytearray([0]*512))
+    empty = bytearray([255]*512)
     for i in xrange(num_addresses):
-        val = bytearray(empty)
-        val[i] = 255
-        write_dmx(buf = val)
-        print "Address: ", i
-        time.sleep(5)
+        if i % 3 == 0:
+            val = bytearray(empty)
+            val[i] = 0
+            write_dmx(buf = val)
+            print "Address: ", str(i/3.)
+            time.sleep(sleep)
 
 
 if __name__ == "__main__":
