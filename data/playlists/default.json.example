@@ -279,21 +279,6 @@
             }
         }, 
         {
-            "classname": "Dragons", 
-            "name": "dragons long green", 
-            "params": {
-                "alive-color": "[0.4, 0.5, 1.0]", 
-                "birth-rate": "0.1", 
-                "dead-color": "[1.0, 0.0, 1.0]", 
-                "explode-color": "(0.1, 1.0, 1.0)", 
-                "growth-rate": "60.0", 
-                "growth-time": "0.1", 
-                "pop-limit": "10", 
-                "tail-color": "[0.0, 0.5, 1.0]", 
-                "tail-persist": "2.0"
-            }
-        }, 
-        {
             "classname": "Fungus", 
             "name": "fungi normal", 
             "params": {
@@ -460,7 +445,7 @@
             "classname": "RGBFade", 
             "name": "RGBFade-1", 
             "params": {
-                "speed": "-1.0"
+                "speed": "1.0"
             }
         }, 
         {
@@ -469,21 +454,6 @@
             "params": {
                 "interval": "[0.30,0.46,0.1]", 
                 "speed": "[0.05,0.1,0.1]"
-            }
-        }, 
-        {
-            "classname": "Dragons", 
-            "name": "dragons rainbow", 
-            "params": {
-                "alive-color": "[1.5, 1.0, 1.0]", 
-                "birth-rate": "0.003", 
-                "dead-color": "[-1.0, 0.0, 1.0]", 
-                "explode-color": "(1.0, 1.0, 1.0)", 
-                "growth-rate": "60.0", 
-                "growth-time": "1.0", 
-                "pop-limit": "2", 
-                "tail-color": "[0.0, 0.5, 1.0]", 
-                "tail-persist": "4.0"
             }
         }, 
         {
@@ -596,21 +566,6 @@
                 "scale": "0.25", 
                 "speed": "[0,0.2,1]", 
                 "whiteout": "0.4"
-            }
-        }, 
-        {
-            "classname": "Dragons", 
-            "name": "Dragons-1", 
-            "params": {
-                "alive-color": "(0.0, 1.0, 1.0)", 
-                "birth-rate": "0.4", 
-                "dead-color": "(0.0, 0.0, 0.0)", 
-                "explode-color": "(1.0, 1.0, 1.0)", 
-                "growth-rate": "30.0", 
-                "growth-time": "4.0", 
-                "pop-limit": "20", 
-                "tail-color": "(0.2, 0.0, 1.0)", 
-                "tail-persist": "0.5"
             }
         }, 
         {
