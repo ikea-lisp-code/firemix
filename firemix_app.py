@@ -10,6 +10,7 @@ from lib.settings import Settings
 from lib.scene import Scene
 from lib.plugin_loader import PluginLoader
 from lib.aubio_connector import AubioConnector
+from lib.osc_server import OscServer
 from lib.buffer_utils import BufferUtils
 
 
@@ -39,6 +40,12 @@ class FireMixApp(QtCore.QThread):
         if not self.args.noaudio:
             self.aubio_connector = AubioConnector()
             self.aubio_connector.onset_detected.connect(self.mixer.onset_detected)
+
+        self.osc_server = None
+        if not self.args.noosc:
+            self.osc_server = OscServer(self.args.osc_port)
+            self.osc_server.notifier.feature_received.connect(self.mixer.feature_received)
+            self.osc_server.start()
 
         self.mixer.set_playlist(self.playlist)
 
