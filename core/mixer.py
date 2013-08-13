@@ -1,9 +1,12 @@
 import logging
+from collections import defaultdict
 import threading
 import time
 import random
 import math
 import numpy as np
+
+from profilehooks import profile
 
 USE_YAPPI = True
 try:
@@ -64,9 +67,11 @@ class Mixer(QtCore.QObject):
         self._global_dimmer = 1.0
         self._global_speed = 1.0
         self._render_in_progress = False
+        self._last_tick_time = time.time()
         self.transition_progress = 0.0
+        self.features_by_group = defaultdict(lambda: defaultdict(lambda: {}))
 
-        if self._app.args.profile and USE_YAPPI:
+        if self._app.args.yappi and USE_YAPPI:
             yappi.start()
 
         # Load transitions
@@ -109,7 +114,7 @@ class Mixer(QtCore.QObject):
         self._tick_timer.cancel()
         self._stop_time = time.time()
 
-        if self._app.args.profile and USE_YAPPI:
+        if self._app.args.yappi and USE_YAPPI:
             yappi.print_stats(sort_type=yappi.SORTTYPE_TSUB, limit=15, thread_stats_on=False)
 
     def pause(self, pause=True):
@@ -125,6 +130,12 @@ class Mixer(QtCore.QObject):
         if (t - self._last_onset_time) > self._onset_holdoff:
             self._last_onset_time = t
             self._onset = True
+
+    @QtCore.Slot(dict)
+    def feature_received(self, feature):
+        log.info('Mixer received feature.')
+        self.features_by_group[feature['group']][feature['feature']].update(feature)
+        self._playlist.get_active_preset().on_feature(feature)
 
     def set_global_dimmer(self, dimmer):
         self._global_dimmer = dimmer
@@ -191,6 +202,7 @@ class Mixer(QtCore.QObject):
     def get_transition_duration(self):
         return self._transition_duration
 
+    @profile
     def on_tick_timer(self):
         if self._frozen:
             delay = 1.0 / self._tick_rate
@@ -263,7 +275,9 @@ class Mixer(QtCore.QObject):
 
     def tick(self):
         self._num_frames += 1
-        dt = (self._global_speed / self._tick_rate)
+        now = time.time()
+        dt = now - self._last_tick_time
+        self._last_tick_time = now
         if len(self._playlist) > 0:
 
             self._playlist.get_active_preset().clear_commands()
@@ -415,16 +429,22 @@ class Mixer(QtCore.QObject):
 
             elif isinstance(command, SetFixture):
                 strand = command.get_strand()
-                fixture = command.get_address()
-                start = BufferUtils.logical_to_index((strand, fixture, 0))
-                end = start + self._scene.fixture(strand, fixture).pixels
+                address = command.get_address()
+                fixture = self._scene.fixture(strand, address)
+
+                if fixture is None:
+                    log.error("SetFixture command setting invalid fixture: %s", (strand,address))
+                    continue
+
+                start = BufferUtils.logical_to_index((strand, address, 0))
+                end = start + fixture.pixels
                 buffer[start:end] = color
 
             elif isinstance(command, SetPixel):
                 strand = command.get_strand()
-                fixture = command.get_address()
+                address = command.get_address()
                 offset = command.get_pixel()
-                pixel = BufferUtils.logical_to_index((strand, fixture, offset))
+                pixel = BufferUtils.logical_to_index((strand, address, offset))
                 buffer[pixel] = color
 
     def get_buffer_shape(self):

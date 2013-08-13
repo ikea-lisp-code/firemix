@@ -125,7 +125,7 @@ class Preset:
     def clear_tickers(self):
         self._tickers = []
 
-    def tick(self, dt):  
+    def tick(self, dt):
         if self._mixer._enable_profiling:
             start = time.time()
             # TODO: This does not account for varying frame rate
@@ -133,7 +133,7 @@ class Preset:
 
         for parameter in self._parameters.values():
             parameter.tick(dt)
-        
+
         # Assume that self._tickers is already sorted via add_ticker()
         for ticker, priority in self._tickers:
 
@@ -183,6 +183,10 @@ class Preset:
 
     def scene(self):
         return self._mixer.scene()
+
+    def on_feature(self, feature):
+        """Called when the mixer receives a new feature report."""
+        return
 
 
 class TestPreset(unittest.TestCase):
