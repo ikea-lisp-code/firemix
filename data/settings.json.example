@@ -1,29 +1,32 @@
 {
     "file-type": "settings", 
     "last-playlist": "default", 
-    "last-scene": "demo", 
+    "last-scene": "single", 
     "mixer": {
-        "preset-duration": 6.0, 
-        "tick-rate": 32,
+        "last_playlist": "default", 
+        "onset-holdoff": 0.1, 
+        "paused": true, 
+        "preset-duration": 10.0, 
+        "shuffle": false, 
+        "tick-rate": 40.0, 
         "transition": "Dissolve", 
-        "transition-duration": 2.5,
-        "transition-slop": 1.0,
-        "onset-holdoff": 0.1,
-        "shuffle": false
+        "transition-duration": 2.5, 
+        "transition-slop": 1.0
     }, 
     "networking": {
         "clients": [
             {
-                "color-mode": "RGB8",
-                "enabled": true,
-                "host": "127.0.0.1",
+                "color-mode": "RGB8", 
+                "enabled": true, 
+                "host": "127.0.0.1", 
                 "port": 3020
-            },
+            }, 
             {
-                "color-mode": "RGB8",
-                "enabled": false,
-                "host": "127.0.0.1",
-                "port": 3021
+                "color-mode": "RGB8", 
+                "enabled": false, 
+                "host": "172.16.0.32", 
+                "port": 3020
+                "name": "pi"
             }
         ]
     }
