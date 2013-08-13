@@ -8,7 +8,7 @@ except ImportError as err:
     sys.stderr.write("Error: failed to import module ({})".format(err))
 
 
-def write_dmx(baudrate = 115200, buf = bytearray([255, 255, 255])):
+def write_dmx(baudrate = 250000, buf = bytearray([255, 255, 255])):
     """ Simple test routine for DMX-over-serial, with varying baudrates. The buf is
     the DMX address space (0 - 512). 
     TODO: The baudrate on the Pi currently ceilings at 115200 baud. Change back to 
@@ -18,7 +18,7 @@ def write_dmx(baudrate = 115200, buf = bytearray([255, 255, 255])):
     num_addresses = 512
     assert len(buf) <= num_addresses
     # DMX serial default parameters
-    device_name = "/dev/ttyAMA0"
+    device_name = "/dev/ttyUSB0"
     port = serial.Serial(device_name)
     port.baudrate = baudrate
     port.bytesize = serial.EIGHTBITS
