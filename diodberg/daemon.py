@@ -22,7 +22,7 @@ class DMXDaemon(QtCore.QObject):
         self.__socket = None
         self.__serial = serial_port
         
-    def init_socket(self):
+    def init_socket(self, host = QtNetwork.QHostAddress.LocalHost):
         self.__socket = QtNetwork.QUdpSocket(self)
         self.__socket.readyRead.connect(self.read_datagrams)
         self.__socket.bind(3020, QtNetwork.QUdpSocket.ShareAddress | QtNetwork.QUdpSocket.ReuseAddressHint)
@@ -59,8 +59,8 @@ class DMXSerialRenderer(object):
 
     __dmx_buffer_size = 512
     __default_channel_val = 0
-    __device_name = "/dev/ttyAMA0"
-    __baud_rateHz = 115200
+    __device_name = "/dev/ttyUSB0"
+    __baud_rateHz = 250000
     __timeout = 3.
     __bytesize = serial.EIGHTBITS
     __parity = serial.PARITY_NONE
