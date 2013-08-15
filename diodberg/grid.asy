@@ -8,9 +8,18 @@ real offset = 6.;
 
 for (int i = 0; i < 6; i += 1) {
     picture p = shift(i*offset,0)*grid(6,18);
-    add(p, filltype = FillDraw(0.1, 0.1, rgb(grey)));
+    if (i % 2 == 0) {
+        add(p, filltype = FillDraw(0.1, 0.1, rgb(heavygrey)));
+    } else {
+        add(p, filltype = FillDraw(0.1, 0.1, rgb(grey)));
+    }
 }
+
 for (int i = 0; i < 6; i += 1) {
     picture p = shift(i*offset,19)*grid(6,18);
-    add(p, filltype = FillDraw(0.1, 0.1, rgb(grey)));
+    if (i % 2 == 1) {
+        add(p, filltype = FillDraw(0.1, 0.1, rgb(heavygrey)));
+    } else {
+        add(p, filltype = FillDraw(0.1, 0.1, rgb(grey)));
+    }
 }
