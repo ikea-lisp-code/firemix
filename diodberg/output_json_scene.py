@@ -13,13 +13,15 @@ def random_location(x_lower = 0, x_upper = 100, y_lower = 0, y_upper = 100):
 def make_locations():
     x_width = 6*6
     y_width = 18
-    count = 300
+    count = 250
     bottom = set()
     top = set()
-    while len(bottom) is not count/2:
-        bottom.add(random_location(0, x_width, 0, y_width))
-    while len(top) is not count/2:
-        top.add(random_location(0, x_width, y_width + 1, y_width*2+1))
+    while len(bottom) < count:
+        loc = random_location(0, x_width, 0, y_width)
+        bottom.add(loc)
+    # TODO: Remove if using second half 
+    # while len(top) is not count/2:
+    #     top.add(random_location(0, x_width, y_width + 1, y_width*2+1))
     locations = set()
     locations.update(top)
     locations.update(bottom)
@@ -38,6 +40,7 @@ def read_locations():
 def main():
     locations = make_locations()
     i, j = 0, 0
+    count = 0
     xc, yc = 17.5, 630
     run = 17.25
     ans = """ {
@@ -50,7 +53,9 @@ def main():
     for loc in locations:
         x, y = loc
         xp, yp = xc + x*run, yc - y*run
-        strand = 0 if y < 18 else 1
+        strand = 0 if count < 125 else 1
+        # TODO: Remove if using second half.
+        # strand = 0 if y < 18 else 1
         address = i if strand is 0 else j
         ans += """ \n\t\t\t{
         \t\t\t"address": %d, 
@@ -65,6 +70,7 @@ def main():
             i += 1
         else: 
             j += 1
+        count += 1
     ans = ans.rstrip(",")
     ans += "\n\t],\t"
     ans += """\n\t"labels_enable": false, 
