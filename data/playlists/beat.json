@@ -1,0 +1,17 @@
+{
+    "file-type": "playlist",
+    "playlist": [
+        {
+            "classname": "PositionDonutParticles",
+            "name": "beat",
+            "params": {
+                "color-end": "(1.0, 0.5, 1.0)",
+                "color-start": "(0.0, 0.5, 1.0)",
+                "color-steps": "256",
+                "feature": "beat",
+                "speed": "100.0",
+                "width": "10.0"
+            }
+        }
+    ]
+}

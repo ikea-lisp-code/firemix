@@ -47,5 +47,9 @@ class ColorFade:
 
         return self.color_cache[progress]
 
+    def get_color_wrapped(self, progress):
+        progress = progress % self._steps
+        return self.get_color(progress)
+
 
 Rainbow = ColorFade([(0, 0.5, 1), (1, 0.5, 1)], 256)

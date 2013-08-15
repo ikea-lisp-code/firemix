@@ -19,7 +19,7 @@ from PySide import QtCore
 from lib.commands import SetAll, SetStrand, SetFixture, SetPixel, commands_overlap, blend_commands
 from lib.raw_preset import RawPreset
 from lib.buffer_utils import BufferUtils
-
+from lib.audio_emitter import AudioEmitter
 
 log = logging.getLogger("firemix.core.mixer")
 
@@ -69,7 +69,7 @@ class Mixer(QtCore.QObject):
         self._render_in_progress = False
         self._last_tick_time = time.time()
         self.transition_progress = 0.0
-        self.features_by_group = defaultdict(lambda: defaultdict(lambda: {}))
+        self._audio_emitters_by_group = {}
 
         if self._app.args.yappi and USE_YAPPI:
             yappi.start()
@@ -131,11 +131,39 @@ class Mixer(QtCore.QObject):
             self._last_onset_time = t
             self._onset = True
 
+    def audio_emitter(self, group):
+        audio_emitter = self._audio_emitters_by_group.get(group, None)
+        if audio_emitter is None:
+            audio_emitter = AudioEmitter(group)
+            self._audio_emitters_by_group[group] = audio_emitter
+        return audio_emitter
+
     @QtCore.Slot(dict)
     def feature_received(self, feature):
-        log.info('Mixer received feature.')
-        self.features_by_group[feature['group']][feature['feature']].update(feature)
-        self._playlist.get_active_preset().on_feature(feature)
+        feature_group = feature.get('group', None)
+        if feature_group is None:
+            log.error('Received feature without a group: %s. Ignoring.', feature)
+            return
+
+        feature_name = feature.get('feature', None)
+        if feature_name is None:
+            log.error('Received feature without a name: %s. Ignoring.', feature)
+            return
+
+        audio_emitter = self.audio_emitter(feature_group)
+        audio_emitter.on_feature_update(feature_name, feature)
+
+        # Maintain legacy onset behavior.
+        if feature['feature'] == 'onset' and feature['value']:
+            t = time.clock()
+            if (t - self._last_onset_time) > self._onset_holdoff:
+                self._onset = True
+                self._last_onset_time = t
+
+        # Notify active preset of feature.
+        active_preset = self._playlist.get_active_preset()
+        if active_preset:
+            active_preset.on_feature(feature)
 
     def set_global_dimmer(self, dimmer):
         self._global_dimmer = dimmer

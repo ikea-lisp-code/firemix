@@ -144,15 +144,17 @@ class FireMixGUI(QtGui.QMainWindow, Ui_FireMixMain):
 
         self.setWindowTitle("FireMix - %s - %0.2f FPS" % (self._app.playlist.name, fps))
 
-        # Update wibblers
-        for name, parameter in self._app.playlist.get_active_preset().get_parameters().iteritems():
-            if parameter._wibbler is not None:
-                pval = parameter.get()
-                for i in range(self.tbl_preset_parameters.rowCount()):
-                    if self.tbl_preset_parameters.item(i, 0).text() == name:
-                        # TODO: For now, all wibblers are float values.  Maybe they should be allowed to be others?
-                        self.tbl_preset_parameters.item(i, 2).setText("= %0.2f" % pval)
-                        self.tbl_preset_parameters.item(i, 2).setBackground(QtGui.QColor(200, 255, 255))
+        active_preset = self._app.playlist.get_active_preset()
+        if active_preset:
+            # Update wibblers
+            for name, parameter in active_preset.get_parameters().iteritems():
+                if parameter._wibbler is not None:
+                    pval = parameter.get()
+                    for i in range(self.tbl_preset_parameters.rowCount()):
+                        if self.tbl_preset_parameters.item(i, 0).text() == name:
+                            # TODO: For now, all wibblers are float values.  Maybe they should be allowed to be others?
+                            self.tbl_preset_parameters.item(i, 2).setText("= %0.2f" % pval)
+                            self.tbl_preset_parameters.item(i, 2).setBackground(QtGui.QColor(200, 255, 255))
 
     def on_btn_playpause(self):
         if self._mixer.is_paused():
@@ -422,4 +424,3 @@ class FireMixGUI(QtGui.QMainWindow, Ui_FireMixMain):
         shuffle = self.btn_shuffle_playlist.isChecked()
         self._app.settings['mixer']['shuffle'] = shuffle
         self._app.playlist.shuffle_mode(shuffle)
-
