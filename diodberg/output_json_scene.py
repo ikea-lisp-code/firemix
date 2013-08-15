@@ -1,7 +1,13 @@
 # Outputs a JSON scene file, either for simulation or for reading 
 # pixel locations from a file or device.
+# Example:
+# python output_json_scene.py Sim | pbcopy 
 
+import json
 import random
+import sys
+
+
 
 def random_location(x_lower = 0, x_upper = 100, y_lower = 0, y_upper = 100):
     """ Returns a bounded, random Location.
@@ -10,10 +16,7 @@ def random_location(x_lower = 0, x_upper = 100, y_lower = 0, y_upper = 100):
     y = random.randint(y_lower, y_upper - 1)
     return (x, y)
 
-def make_locations():
-    x_width = 6*6
-    y_width = 18
-    count = 250
+def make_locations(x_width = 36, y_width = 18, count = 250):
     bottom = set()
     top = set()
     while len(bottom) < count:
@@ -27,9 +30,9 @@ def make_locations():
     locations.update(bottom)
     return locations
 
-def read_locations():
+def read_locations(filename):
     locations = set()
-    f = open("/Users/mookerji/Dropbox/projects/burningman_project/clone-firemix/firemix/diodberg/foo", 'r')
+    f = open(filename, 'r')
     for line in f:
         words = line.split()
         x, y = (int(words[0]), int(words[1]))
@@ -37,19 +40,19 @@ def read_locations():
     f.close()
     return locations
 
-def main():
-    locations = make_locations()
+def main(scene_name, filename):
+    locations = read_locations(filename) if filename else make_locations()
     i, j = 0, 0
     count = 0
     xc, yc = 17.5, 630
     run = 17.25
-    ans = """ {
-    \t"backdrop_enable": true, 
-    \t"backdrop_filename": "grid.png", 
-    \t"center": [320, 320], 
-    \t"extents": [640, 640],
-    \t"file-type": "scene", 
-    \t"fixtures": [\n"""
+    scene = dict()
+    scene["backdrop_enable"] = True
+    scene["backdrop_filename"] = "grid.png"
+    scene["center"] = (320, 320)
+    scene["extents"] = (640, 640)
+    scene["file-type"] = "scene"
+    fixtures = []
     for loc in locations:
         x, y = loc
         xp, yp = xc + x*run, yc - y*run
@@ -57,38 +60,39 @@ def main():
         # TODO: Remove if using second half.
         # strand = 0 if y < 18 else 1
         address = i if strand is 0 else j
-        ans += """ \n\t\t\t{
-        \t\t\t"address": %d, 
-        \t\t\t"pixels": 1, 
-        \t\t\t"pos1": [%d, %d], 
-        \t\t\t"pos2": [%d, %d], 
-        \t\t\t"loc": [%d, %d], 
-        \t\t\t"strand": %d, 
-        \t\t\t"type": "linear"
-        \t\t},""" % (address, xp, yp, xp, yp, x, y, strand)
+        fixture = dict()
+        fixture["address"] = address
+        fixture["pixels"] = 1
+        fixture["pos1"] = (xp, yp)
+        fixture["pos2"] = fixture["pos1"]
+        fixture["loc"] = loc
+        fixture["strand"] = strand
+        fixture["type"] = "linear"
         if strand is 0:
             i += 1
         else: 
             j += 1
         count += 1
-    ans = ans.rstrip(",")
-    ans += "\n\t],\t"
-    ans += """\n\t"labels_enable": false, 
-    \t"locked": true, 
-    \t"name": "Sim", 
-    \t"strand-settings": [
-    \t\t{
-    \t\t\t"color-mode": "RGB8", 
-    \t\t\t"enabled": true, 
-    \t\t\t"id": 0
-    \t\t},
-    \t\t{
-    \t\t\t"color-mode": "RGB8", 
-    \t\t\t"enabled": true, 
-    \t\t\t"id": 1
-    \t\t}
-    \t]\n}"""
-    print ans 
+        fixtures.append(fixture)
+    scene["fixtures"] = fixtures
+    scene["labels_enable"] = False
+    scene["locked"] = True
+    scene["name"] = scene_name
+    s1 = {"color-mode": "RGB8",
+          "enabled": True,
+          "id" : 0
+      }
+    s2 = {"color-mode": "RGB8",
+          "enabled": True,
+          "id" : 1
+      }
+    scene["strand-settings"] = [s1, s2]
+    print json.dumps(scene, indent = 4, sort_keys = True)
 
 if __name__ == '__main__':
-    main()
+    if len(sys.argv) == 2:
+        main(sys.argv[1], "")
+    elif len(sys.argv) > 2:
+        main(sys.argv[1], sys.argv[2])
+    else: 
+        print "python output_json_scene.py <scene name> <if reading, filename>"
