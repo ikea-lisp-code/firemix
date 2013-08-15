@@ -1,118 +1,2725 @@
-{
-    "backdrop_enable": true, 
-    "backdrop_filename": "grid.png", 
-    "center": [320, 320], 
-    "extents": [640, 640],
-    "file-type": "scene", 
-    "fixtures": [
- 	    {
-    		"address": 0, 
-    		"pixels": 1, 
-    		"pos1": [320, 330], 
-    		"pos2": [320, 330], 
-    		"loc": [0, 3], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 1, 
-    		"pixels": 1, 
-    		"pos1": [440, 330], 
-    		"pos2": [440, 330], 
-    		"loc": [4, 3], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 2, 
-    		"pixels": 1, 
-    		"pos1": [410, 240], 
-    		"pos2": [410, 240], 
-    		"loc": [3, 6], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 3, 
-    		"pixels": 1, 
-    		"pos1": [320, 210], 
-    		"pos2": [320, 210], 
-    		"loc": [0, 7], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 4, 
-    		"pixels": 1, 
-    		"pos1": [380, 210], 
-    		"pos2": [380, 210], 
-    		"loc": [2, 7], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 5, 
-    		"pixels": 1, 
-    		"pos1": [410, 210], 
-    		"pos2": [410, 210], 
-    		"loc": [3, 7], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 6, 
-    		"pixels": 1, 
-    		"pos1": [440, 180], 
-    		"pos2": [440, 180], 
-    		"loc": [4, 8], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 7, 
-    		"pixels": 1, 
-    		"pos1": [320, 150], 
-    		"pos2": [320, 150], 
-    		"loc": [0, 9], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 8, 
-    		"pixels": 1, 
-    		"pos1": [350, 150], 
-    		"pos2": [350, 150], 
-    		"loc": [1, 9], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 9, 
-    		"pixels": 1, 
-    		"pos1": [440, 150], 
-    		"pos2": [440, 150], 
-    		"loc": [4, 9], 
-    		"strand": 0, 
-    		"type": "linear"
-    	},
- 	    {
-    		"address": 10, 
-    		"pixels": 1, 
-    		"pos1": [320, 120], 
-    		"pos2": [320, 120], 
-    		"loc": [0, 10], 
-    		"strand": 0, 
-    		"type": "linear"
-        }
-    ],
-    "labels_enable": false, 
-    "locked": true, 
-    "name": "Sim", 
-    "strand-settings": [
-        {
-            "color-mode": "RGB8", 
-            "enabled": true, 
-            "id": 0
-        }
-    ]
+ {
+    	"backdrop_enable": true, 
+    	"backdrop_filename": "grid.png", 
+    	"center": [320, 320], 
+    	"extents": [640, 640],
+    	"file-type": "scene", 
+    	"fixtures": [
+ 
+			{
+        			"address": 0, 
+        			"pixels": 1, 
+        			"pos1": [604, 561], 
+        			"pos2": [604, 561], 
+        			"loc": [34, 4], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 0, 
+        			"pixels": 1, 
+        			"pos1": [431, 112], 
+        			"pos2": [431, 112], 
+        			"loc": [24, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 1, 
+        			"pixels": 1, 
+        			"pos1": [103, 95], 
+        			"pos2": [103, 95], 
+        			"loc": [5, 31], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 2, 
+        			"pixels": 1, 
+        			"pos1": [362, 198], 
+        			"pos2": [362, 198], 
+        			"loc": [20, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 3, 
+        			"pixels": 1, 
+        			"pos1": [69, 26], 
+        			"pos2": [69, 26], 
+        			"loc": [3, 35], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 4, 
+        			"pixels": 1, 
+        			"pos1": [621, 250], 
+        			"pos2": [621, 250], 
+        			"loc": [35, 22], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 5, 
+        			"pixels": 1, 
+        			"pos1": [448, 95], 
+        			"pos2": [448, 95], 
+        			"loc": [25, 31], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 1, 
+        			"pixels": 1, 
+        			"pos1": [138, 423], 
+        			"pos2": [138, 423], 
+        			"loc": [7, 12], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 6, 
+        			"pixels": 1, 
+        			"pos1": [552, 302], 
+        			"pos2": [552, 302], 
+        			"loc": [31, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 2, 
+        			"pixels": 1, 
+        			"pos1": [345, 561], 
+        			"pos2": [345, 561], 
+        			"loc": [19, 4], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 3, 
+        			"pixels": 1, 
+        			"pos1": [466, 612], 
+        			"pos2": [466, 612], 
+        			"loc": [26, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 7, 
+        			"pixels": 1, 
+        			"pos1": [310, 285], 
+        			"pos2": [310, 285], 
+        			"loc": [17, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 8, 
+        			"pixels": 1, 
+        			"pos1": [293, 147], 
+        			"pos2": [293, 147], 
+        			"loc": [16, 28], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 9, 
+        			"pixels": 1, 
+        			"pos1": [397, 302], 
+        			"pos2": [397, 302], 
+        			"loc": [22, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 4, 
+        			"pixels": 1, 
+        			"pos1": [241, 336], 
+        			"pos2": [241, 336], 
+        			"loc": [13, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 5, 
+        			"pixels": 1, 
+        			"pos1": [362, 509], 
+        			"pos2": [362, 509], 
+        			"loc": [20, 7], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 6, 
+        			"pixels": 1, 
+        			"pos1": [224, 612], 
+        			"pos2": [224, 612], 
+        			"loc": [12, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 7, 
+        			"pixels": 1, 
+        			"pos1": [483, 595], 
+        			"pos2": [483, 595], 
+        			"loc": [27, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 10, 
+        			"pixels": 1, 
+        			"pos1": [328, 112], 
+        			"pos2": [328, 112], 
+        			"loc": [18, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 8, 
+        			"pixels": 1, 
+        			"pos1": [569, 595], 
+        			"pos2": [569, 595], 
+        			"loc": [32, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 9, 
+        			"pixels": 1, 
+        			"pos1": [259, 595], 
+        			"pos2": [259, 595], 
+        			"loc": [14, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 11, 
+        			"pixels": 1, 
+        			"pos1": [259, 95], 
+        			"pos2": [259, 95], 
+        			"loc": [14, 31], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 10, 
+        			"pixels": 1, 
+        			"pos1": [535, 630], 
+        			"pos2": [535, 630], 
+        			"loc": [30, 0], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 12, 
+        			"pixels": 1, 
+        			"pos1": [86, 302], 
+        			"pos2": [86, 302], 
+        			"loc": [4, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 11, 
+        			"pixels": 1, 
+        			"pos1": [34, 543], 
+        			"pos2": [34, 543], 
+        			"loc": [1, 5], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 12, 
+        			"pixels": 1, 
+        			"pos1": [604, 492], 
+        			"pos2": [604, 492], 
+        			"loc": [34, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 13, 
+        			"pixels": 1, 
+        			"pos1": [535, 233], 
+        			"pos2": [535, 233], 
+        			"loc": [30, 23], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 14, 
+        			"pixels": 1, 
+        			"pos1": [362, 112], 
+        			"pos2": [362, 112], 
+        			"loc": [20, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 15, 
+        			"pixels": 1, 
+        			"pos1": [207, 250], 
+        			"pos2": [207, 250], 
+        			"loc": [11, 22], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 13, 
+        			"pixels": 1, 
+        			"pos1": [310, 595], 
+        			"pos2": [310, 595], 
+        			"loc": [17, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 14, 
+        			"pixels": 1, 
+        			"pos1": [431, 388], 
+        			"pos2": [431, 388], 
+        			"loc": [24, 14], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 15, 
+        			"pixels": 1, 
+        			"pos1": [241, 509], 
+        			"pos2": [241, 509], 
+        			"loc": [13, 7], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 16, 
+        			"pixels": 1, 
+        			"pos1": [362, 474], 
+        			"pos2": [362, 474], 
+        			"loc": [20, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 17, 
+        			"pixels": 1, 
+        			"pos1": [345, 578], 
+        			"pos2": [345, 578], 
+        			"loc": [19, 3], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 18, 
+        			"pixels": 1, 
+        			"pos1": [466, 336], 
+        			"pos2": [466, 336], 
+        			"loc": [26, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 16, 
+        			"pixels": 1, 
+        			"pos1": [121, 147], 
+        			"pos2": [121, 147], 
+        			"loc": [6, 28], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 19, 
+        			"pixels": 1, 
+        			"pos1": [466, 405], 
+        			"pos2": [466, 405], 
+        			"loc": [26, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 17, 
+        			"pixels": 1, 
+        			"pos1": [483, 9], 
+        			"pos2": [483, 9], 
+        			"loc": [27, 36], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 18, 
+        			"pixels": 1, 
+        			"pos1": [241, 285], 
+        			"pos2": [241, 285], 
+        			"loc": [13, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 19, 
+        			"pixels": 1, 
+        			"pos1": [52, 164], 
+        			"pos2": [52, 164], 
+        			"loc": [2, 27], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 20, 
+        			"pixels": 1, 
+        			"pos1": [604, 9], 
+        			"pos2": [604, 9], 
+        			"loc": [34, 36], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 20, 
+        			"pixels": 1, 
+        			"pos1": [155, 371], 
+        			"pos2": [155, 371], 
+        			"loc": [8, 15], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 21, 
+        			"pixels": 1, 
+        			"pos1": [604, 423], 
+        			"pos2": [604, 423], 
+        			"loc": [34, 12], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 22, 
+        			"pixels": 1, 
+        			"pos1": [517, 336], 
+        			"pos2": [517, 336], 
+        			"loc": [29, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 21, 
+        			"pixels": 1, 
+        			"pos1": [500, 95], 
+        			"pos2": [500, 95], 
+        			"loc": [28, 31], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 23, 
+        			"pixels": 1, 
+        			"pos1": [483, 612], 
+        			"pos2": [483, 612], 
+        			"loc": [27, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 22, 
+        			"pixels": 1, 
+        			"pos1": [328, 26], 
+        			"pos2": [328, 26], 
+        			"loc": [18, 35], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 24, 
+        			"pixels": 1, 
+        			"pos1": [138, 457], 
+        			"pos2": [138, 457], 
+        			"loc": [7, 10], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 25, 
+        			"pixels": 1, 
+        			"pos1": [86, 543], 
+        			"pos2": [86, 543], 
+        			"loc": [4, 5], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 26, 
+        			"pixels": 1, 
+        			"pos1": [190, 405], 
+        			"pos2": [190, 405], 
+        			"loc": [10, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 23, 
+        			"pixels": 1, 
+        			"pos1": [604, 112], 
+        			"pos2": [604, 112], 
+        			"loc": [34, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 24, 
+        			"pixels": 1, 
+        			"pos1": [155, 267], 
+        			"pos2": [155, 267], 
+        			"loc": [8, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 25, 
+        			"pixels": 1, 
+        			"pos1": [259, 216], 
+        			"pos2": [259, 216], 
+        			"loc": [14, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 26, 
+        			"pixels": 1, 
+        			"pos1": [535, 129], 
+        			"pos2": [535, 129], 
+        			"loc": [30, 29], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 27, 
+        			"pixels": 1, 
+        			"pos1": [362, 78], 
+        			"pos2": [362, 78], 
+        			"loc": [20, 32], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 28, 
+        			"pixels": 1, 
+        			"pos1": [103, 250], 
+        			"pos2": [103, 250], 
+        			"loc": [5, 22], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 29, 
+        			"pixels": 1, 
+        			"pos1": [276, 129], 
+        			"pos2": [276, 129], 
+        			"loc": [15, 29], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 27, 
+        			"pixels": 1, 
+        			"pos1": [328, 423], 
+        			"pos2": [328, 423], 
+        			"loc": [18, 12], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 30, 
+        			"pixels": 1, 
+        			"pos1": [362, 302], 
+        			"pos2": [362, 302], 
+        			"loc": [20, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 28, 
+        			"pixels": 1, 
+        			"pos1": [293, 543], 
+        			"pos2": [293, 543], 
+        			"loc": [16, 5], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 31, 
+        			"pixels": 1, 
+        			"pos1": [293, 302], 
+        			"pos2": [293, 302], 
+        			"loc": [16, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 32, 
+        			"pixels": 1, 
+        			"pos1": [138, 198], 
+        			"pos2": [138, 198], 
+        			"loc": [7, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 33, 
+        			"pixels": 1, 
+        			"pos1": [103, 43], 
+        			"pos2": [103, 43], 
+        			"loc": [5, 34], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 34, 
+        			"pixels": 1, 
+        			"pos1": [224, 250], 
+        			"pos2": [224, 250], 
+        			"loc": [12, 22], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 29, 
+        			"pixels": 1, 
+        			"pos1": [138, 492], 
+        			"pos2": [138, 492], 
+        			"loc": [7, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 35, 
+        			"pixels": 1, 
+        			"pos1": [535, 267], 
+        			"pos2": [535, 267], 
+        			"loc": [30, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 30, 
+        			"pixels": 1, 
+        			"pos1": [34, 423], 
+        			"pos2": [34, 423], 
+        			"loc": [1, 12], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 31, 
+        			"pixels": 1, 
+        			"pos1": [379, 474], 
+        			"pos2": [379, 474], 
+        			"loc": [21, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 36, 
+        			"pixels": 1, 
+        			"pos1": [414, 147], 
+        			"pos2": [414, 147], 
+        			"loc": [23, 28], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 32, 
+        			"pixels": 1, 
+        			"pos1": [310, 388], 
+        			"pos2": [310, 388], 
+        			"loc": [17, 14], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 33, 
+        			"pixels": 1, 
+        			"pos1": [293, 371], 
+        			"pos2": [293, 371], 
+        			"loc": [16, 15], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 34, 
+        			"pixels": 1, 
+        			"pos1": [535, 440], 
+        			"pos2": [535, 440], 
+        			"loc": [30, 11], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 37, 
+        			"pixels": 1, 
+        			"pos1": [86, 181], 
+        			"pos2": [86, 181], 
+        			"loc": [4, 26], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 38, 
+        			"pixels": 1, 
+        			"pos1": [345, 43], 
+        			"pos2": [345, 43], 
+        			"loc": [19, 34], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 39, 
+        			"pixels": 1, 
+        			"pos1": [172, 112], 
+        			"pos2": [172, 112], 
+        			"loc": [9, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 40, 
+        			"pixels": 1, 
+        			"pos1": [448, 60], 
+        			"pos2": [448, 60], 
+        			"loc": [25, 33], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 41, 
+        			"pixels": 1, 
+        			"pos1": [259, 267], 
+        			"pos2": [259, 267], 
+        			"loc": [14, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 42, 
+        			"pixels": 1, 
+        			"pos1": [535, 112], 
+        			"pos2": [535, 112], 
+        			"loc": [30, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 43, 
+        			"pixels": 1, 
+        			"pos1": [190, 129], 
+        			"pos2": [190, 129], 
+        			"loc": [10, 29], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 44, 
+        			"pixels": 1, 
+        			"pos1": [431, 267], 
+        			"pos2": [431, 267], 
+        			"loc": [24, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 45, 
+        			"pixels": 1, 
+        			"pos1": [397, 78], 
+        			"pos2": [397, 78], 
+        			"loc": [22, 32], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 46, 
+        			"pixels": 1, 
+        			"pos1": [379, 216], 
+        			"pos2": [379, 216], 
+        			"loc": [21, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 35, 
+        			"pixels": 1, 
+        			"pos1": [224, 492], 
+        			"pos2": [224, 492], 
+        			"loc": [12, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 36, 
+        			"pixels": 1, 
+        			"pos1": [345, 492], 
+        			"pos2": [345, 492], 
+        			"loc": [19, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 47, 
+        			"pixels": 1, 
+        			"pos1": [466, 216], 
+        			"pos2": [466, 216], 
+        			"loc": [26, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 48, 
+        			"pixels": 1, 
+        			"pos1": [17, 164], 
+        			"pos2": [17, 164], 
+        			"loc": [0, 27], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 37, 
+        			"pixels": 1, 
+        			"pos1": [431, 492], 
+        			"pos2": [431, 492], 
+        			"loc": [24, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 38, 
+        			"pixels": 1, 
+        			"pos1": [362, 578], 
+        			"pos2": [362, 578], 
+        			"loc": [20, 3], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 49, 
+        			"pixels": 1, 
+        			"pos1": [310, 129], 
+        			"pos2": [310, 129], 
+        			"loc": [17, 29], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 50, 
+        			"pixels": 1, 
+        			"pos1": [569, 302], 
+        			"pos2": [569, 302], 
+        			"loc": [32, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 39, 
+        			"pixels": 1, 
+        			"pos1": [52, 612], 
+        			"pos2": [52, 612], 
+        			"loc": [2, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 51, 
+        			"pixels": 1, 
+        			"pos1": [328, 181], 
+        			"pos2": [328, 181], 
+        			"loc": [18, 26], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 40, 
+        			"pixels": 1, 
+        			"pos1": [414, 578], 
+        			"pos2": [414, 578], 
+        			"loc": [23, 3], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 41, 
+        			"pixels": 1, 
+        			"pos1": [86, 423], 
+        			"pos2": [86, 423], 
+        			"loc": [4, 12], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 42, 
+        			"pixels": 1, 
+        			"pos1": [52, 423], 
+        			"pos2": [52, 423], 
+        			"loc": [2, 12], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 43, 
+        			"pixels": 1, 
+        			"pos1": [569, 474], 
+        			"pos2": [569, 474], 
+        			"loc": [32, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 44, 
+        			"pixels": 1, 
+        			"pos1": [535, 561], 
+        			"pos2": [535, 561], 
+        			"loc": [30, 4], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 52, 
+        			"pixels": 1, 
+        			"pos1": [86, 95], 
+        			"pos2": [86, 95], 
+        			"loc": [4, 31], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 45, 
+        			"pixels": 1, 
+        			"pos1": [345, 388], 
+        			"pos2": [345, 388], 
+        			"loc": [19, 14], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 53, 
+        			"pixels": 1, 
+        			"pos1": [172, 198], 
+        			"pos2": [172, 198], 
+        			"loc": [9, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 54, 
+        			"pixels": 1, 
+        			"pos1": [276, 181], 
+        			"pos2": [276, 181], 
+        			"loc": [15, 26], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 46, 
+        			"pixels": 1, 
+        			"pos1": [552, 612], 
+        			"pos2": [552, 612], 
+        			"loc": [31, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 55, 
+        			"pixels": 1, 
+        			"pos1": [362, 181], 
+        			"pos2": [362, 181], 
+        			"loc": [20, 26], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 56, 
+        			"pixels": 1, 
+        			"pos1": [69, 43], 
+        			"pos2": [69, 43], 
+        			"loc": [3, 34], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 57, 
+        			"pixels": 1, 
+        			"pos1": [190, 112], 
+        			"pos2": [190, 112], 
+        			"loc": [10, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 47, 
+        			"pixels": 1, 
+        			"pos1": [517, 612], 
+        			"pos2": [517, 612], 
+        			"loc": [29, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 58, 
+        			"pixels": 1, 
+        			"pos1": [362, 267], 
+        			"pos2": [362, 267], 
+        			"loc": [20, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 48, 
+        			"pixels": 1, 
+        			"pos1": [345, 509], 
+        			"pos2": [345, 509], 
+        			"loc": [19, 7], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 59, 
+        			"pixels": 1, 
+        			"pos1": [138, 216], 
+        			"pos2": [138, 216], 
+        			"loc": [7, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 49, 
+        			"pixels": 1, 
+        			"pos1": [397, 354], 
+        			"pos2": [397, 354], 
+        			"loc": [22, 16], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 50, 
+        			"pixels": 1, 
+        			"pos1": [241, 354], 
+        			"pos2": [241, 354], 
+        			"loc": [13, 16], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 51, 
+        			"pixels": 1, 
+        			"pos1": [345, 440], 
+        			"pos2": [345, 440], 
+        			"loc": [19, 11], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 52, 
+        			"pixels": 1, 
+        			"pos1": [448, 440], 
+        			"pos2": [448, 440], 
+        			"loc": [25, 11], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 60, 
+        			"pixels": 1, 
+        			"pos1": [483, 216], 
+        			"pos2": [483, 216], 
+        			"loc": [27, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 61, 
+        			"pixels": 1, 
+        			"pos1": [310, 216], 
+        			"pos2": [310, 216], 
+        			"loc": [17, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 53, 
+        			"pixels": 1, 
+        			"pos1": [379, 543], 
+        			"pos2": [379, 543], 
+        			"loc": [21, 5], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 54, 
+        			"pixels": 1, 
+        			"pos1": [34, 405], 
+        			"pos2": [34, 405], 
+        			"loc": [1, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 62, 
+        			"pixels": 1, 
+        			"pos1": [569, 198], 
+        			"pos2": [569, 198], 
+        			"loc": [32, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 55, 
+        			"pixels": 1, 
+        			"pos1": [569, 578], 
+        			"pos2": [569, 578], 
+        			"loc": [32, 3], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 56, 
+        			"pixels": 1, 
+        			"pos1": [86, 474], 
+        			"pos2": [86, 474], 
+        			"loc": [4, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 57, 
+        			"pixels": 1, 
+        			"pos1": [586, 474], 
+        			"pos2": [586, 474], 
+        			"loc": [33, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 58, 
+        			"pixels": 1, 
+        			"pos1": [121, 561], 
+        			"pos2": [121, 561], 
+        			"loc": [6, 4], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 59, 
+        			"pixels": 1, 
+        			"pos1": [500, 509], 
+        			"pos2": [500, 509], 
+        			"loc": [28, 7], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 60, 
+        			"pixels": 1, 
+        			"pos1": [121, 405], 
+        			"pos2": [121, 405], 
+        			"loc": [6, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 63, 
+        			"pixels": 1, 
+        			"pos1": [259, 302], 
+        			"pos2": [259, 302], 
+        			"loc": [14, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 64, 
+        			"pixels": 1, 
+        			"pos1": [535, 285], 
+        			"pos2": [535, 285], 
+        			"loc": [30, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 61, 
+        			"pixels": 1, 
+        			"pos1": [483, 474], 
+        			"pos2": [483, 474], 
+        			"loc": [27, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 65, 
+        			"pixels": 1, 
+        			"pos1": [103, 164], 
+        			"pos2": [103, 164], 
+        			"loc": [5, 27], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 62, 
+        			"pixels": 1, 
+        			"pos1": [276, 509], 
+        			"pos2": [276, 509], 
+        			"loc": [15, 7], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 63, 
+        			"pixels": 1, 
+        			"pos1": [379, 440], 
+        			"pos2": [379, 440], 
+        			"loc": [21, 11], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 64, 
+        			"pixels": 1, 
+        			"pos1": [552, 492], 
+        			"pos2": [552, 492], 
+        			"loc": [31, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 66, 
+        			"pixels": 1, 
+        			"pos1": [328, 267], 
+        			"pos2": [328, 267], 
+        			"loc": [18, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 67, 
+        			"pixels": 1, 
+        			"pos1": [310, 164], 
+        			"pos2": [310, 164], 
+        			"loc": [17, 27], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 68, 
+        			"pixels": 1, 
+        			"pos1": [466, 285], 
+        			"pos2": [466, 285], 
+        			"loc": [26, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 65, 
+        			"pixels": 1, 
+        			"pos1": [155, 578], 
+        			"pos2": [155, 578], 
+        			"loc": [8, 3], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 66, 
+        			"pixels": 1, 
+        			"pos1": [103, 457], 
+        			"pos2": [103, 457], 
+        			"loc": [5, 10], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 67, 
+        			"pixels": 1, 
+        			"pos1": [500, 440], 
+        			"pos2": [500, 440], 
+        			"loc": [28, 11], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 68, 
+        			"pixels": 1, 
+        			"pos1": [293, 405], 
+        			"pos2": [293, 405], 
+        			"loc": [16, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 69, 
+        			"pixels": 1, 
+        			"pos1": [121, 612], 
+        			"pos2": [121, 612], 
+        			"loc": [6, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 69, 
+        			"pixels": 1, 
+        			"pos1": [293, 9], 
+        			"pos2": [293, 9], 
+        			"loc": [16, 36], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 70, 
+        			"pixels": 1, 
+        			"pos1": [362, 60], 
+        			"pos2": [362, 60], 
+        			"loc": [20, 33], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 71, 
+        			"pixels": 1, 
+        			"pos1": [621, 112], 
+        			"pos2": [621, 112], 
+        			"loc": [35, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 72, 
+        			"pixels": 1, 
+        			"pos1": [466, 43], 
+        			"pos2": [466, 43], 
+        			"loc": [26, 34], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 73, 
+        			"pixels": 1, 
+        			"pos1": [276, 147], 
+        			"pos2": [276, 147], 
+        			"loc": [15, 28], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 74, 
+        			"pixels": 1, 
+        			"pos1": [362, 147], 
+        			"pos2": [362, 147], 
+        			"loc": [20, 28], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 75, 
+        			"pixels": 1, 
+        			"pos1": [621, 302], 
+        			"pos2": [621, 302], 
+        			"loc": [35, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 76, 
+        			"pixels": 1, 
+        			"pos1": [552, 285], 
+        			"pos2": [552, 285], 
+        			"loc": [31, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 77, 
+        			"pixels": 1, 
+        			"pos1": [224, 233], 
+        			"pos2": [224, 233], 
+        			"loc": [12, 23], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 78, 
+        			"pixels": 1, 
+        			"pos1": [34, 112], 
+        			"pos2": [34, 112], 
+        			"loc": [1, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 70, 
+        			"pixels": 1, 
+        			"pos1": [448, 474], 
+        			"pos2": [448, 474], 
+        			"loc": [25, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 79, 
+        			"pixels": 1, 
+        			"pos1": [569, 233], 
+        			"pos2": [569, 233], 
+        			"loc": [32, 23], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 71, 
+        			"pixels": 1, 
+        			"pos1": [17, 440], 
+        			"pos2": [17, 440], 
+        			"loc": [0, 11], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 72, 
+        			"pixels": 1, 
+        			"pos1": [52, 492], 
+        			"pos2": [52, 492], 
+        			"loc": [2, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 73, 
+        			"pixels": 1, 
+        			"pos1": [172, 492], 
+        			"pos2": [172, 492], 
+        			"loc": [9, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 74, 
+        			"pixels": 1, 
+        			"pos1": [155, 630], 
+        			"pos2": [155, 630], 
+        			"loc": [8, 0], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 75, 
+        			"pixels": 1, 
+        			"pos1": [103, 405], 
+        			"pos2": [103, 405], 
+        			"loc": [5, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 76, 
+        			"pixels": 1, 
+        			"pos1": [517, 630], 
+        			"pos2": [517, 630], 
+        			"loc": [29, 0], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 77, 
+        			"pixels": 1, 
+        			"pos1": [224, 526], 
+        			"pos2": [224, 526], 
+        			"loc": [12, 6], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 78, 
+        			"pixels": 1, 
+        			"pos1": [604, 630], 
+        			"pos2": [604, 630], 
+        			"loc": [34, 0], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 80, 
+        			"pixels": 1, 
+        			"pos1": [86, 250], 
+        			"pos2": [86, 250], 
+        			"loc": [4, 22], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 81, 
+        			"pixels": 1, 
+        			"pos1": [190, 181], 
+        			"pos2": [190, 181], 
+        			"loc": [10, 26], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 82, 
+        			"pixels": 1, 
+        			"pos1": [397, 60], 
+        			"pos2": [397, 60], 
+        			"loc": [22, 33], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 79, 
+        			"pixels": 1, 
+        			"pos1": [69, 457], 
+        			"pos2": [69, 457], 
+        			"loc": [3, 10], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 80, 
+        			"pixels": 1, 
+        			"pos1": [224, 474], 
+        			"pos2": [224, 474], 
+        			"loc": [12, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 83, 
+        			"pixels": 1, 
+        			"pos1": [207, 302], 
+        			"pos2": [207, 302], 
+        			"loc": [11, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 84, 
+        			"pixels": 1, 
+        			"pos1": [34, 285], 
+        			"pos2": [34, 285], 
+        			"loc": [1, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 81, 
+        			"pixels": 1, 
+        			"pos1": [293, 630], 
+        			"pos2": [293, 630], 
+        			"loc": [16, 0], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 85, 
+        			"pixels": 1, 
+        			"pos1": [379, 285], 
+        			"pos2": [379, 285], 
+        			"loc": [21, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 86, 
+        			"pixels": 1, 
+        			"pos1": [34, 198], 
+        			"pos2": [34, 198], 
+        			"loc": [1, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 82, 
+        			"pixels": 1, 
+        			"pos1": [17, 371], 
+        			"pos2": [17, 371], 
+        			"loc": [0, 15], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 87, 
+        			"pixels": 1, 
+        			"pos1": [569, 285], 
+        			"pos2": [569, 285], 
+        			"loc": [32, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 88, 
+        			"pixels": 1, 
+        			"pos1": [121, 216], 
+        			"pos2": [121, 216], 
+        			"loc": [6, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 83, 
+        			"pixels": 1, 
+        			"pos1": [379, 612], 
+        			"pos2": [379, 612], 
+        			"loc": [21, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 89, 
+        			"pixels": 1, 
+        			"pos1": [207, 43], 
+        			"pos2": [207, 43], 
+        			"loc": [11, 34], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 90, 
+        			"pixels": 1, 
+        			"pos1": [483, 198], 
+        			"pos2": [483, 198], 
+        			"loc": [27, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 84, 
+        			"pixels": 1, 
+        			"pos1": [466, 578], 
+        			"pos2": [466, 578], 
+        			"loc": [26, 3], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 91, 
+        			"pixels": 1, 
+        			"pos1": [310, 60], 
+        			"pos2": [310, 60], 
+        			"loc": [17, 33], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 85, 
+        			"pixels": 1, 
+        			"pos1": [17, 630], 
+        			"pos2": [17, 630], 
+        			"loc": [0, 0], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 92, 
+        			"pixels": 1, 
+        			"pos1": [52, 9], 
+        			"pos2": [52, 9], 
+        			"loc": [2, 36], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 86, 
+        			"pixels": 1, 
+        			"pos1": [86, 405], 
+        			"pos2": [86, 405], 
+        			"loc": [4, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 87, 
+        			"pixels": 1, 
+        			"pos1": [414, 371], 
+        			"pos2": [414, 371], 
+        			"loc": [23, 15], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 88, 
+        			"pixels": 1, 
+        			"pos1": [69, 354], 
+        			"pos2": [69, 354], 
+        			"loc": [3, 16], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 89, 
+        			"pixels": 1, 
+        			"pos1": [224, 336], 
+        			"pos2": [224, 336], 
+        			"loc": [12, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 93, 
+        			"pixels": 1, 
+        			"pos1": [34, 78], 
+        			"pos2": [34, 78], 
+        			"loc": [1, 32], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 90, 
+        			"pixels": 1, 
+        			"pos1": [69, 543], 
+        			"pos2": [69, 543], 
+        			"loc": [3, 5], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 91, 
+        			"pixels": 1, 
+        			"pos1": [552, 630], 
+        			"pos2": [552, 630], 
+        			"loc": [31, 0], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 94, 
+        			"pixels": 1, 
+        			"pos1": [535, 216], 
+        			"pos2": [535, 216], 
+        			"loc": [30, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 95, 
+        			"pixels": 1, 
+        			"pos1": [345, 267], 
+        			"pos2": [345, 267], 
+        			"loc": [19, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 92, 
+        			"pixels": 1, 
+        			"pos1": [310, 543], 
+        			"pos2": [310, 543], 
+        			"loc": [17, 5], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 96, 
+        			"pixels": 1, 
+        			"pos1": [552, 129], 
+        			"pos2": [552, 129], 
+        			"loc": [31, 29], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 93, 
+        			"pixels": 1, 
+        			"pos1": [241, 595], 
+        			"pos2": [241, 595], 
+        			"loc": [13, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 94, 
+        			"pixels": 1, 
+        			"pos1": [155, 457], 
+        			"pos2": [155, 457], 
+        			"loc": [8, 10], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 97, 
+        			"pixels": 1, 
+        			"pos1": [207, 112], 
+        			"pos2": [207, 112], 
+        			"loc": [11, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 95, 
+        			"pixels": 1, 
+        			"pos1": [328, 595], 
+        			"pos2": [328, 595], 
+        			"loc": [18, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 98, 
+        			"pixels": 1, 
+        			"pos1": [17, 198], 
+        			"pos2": [17, 198], 
+        			"loc": [0, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 96, 
+        			"pixels": 1, 
+        			"pos1": [431, 526], 
+        			"pos2": [431, 526], 
+        			"loc": [24, 6], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 99, 
+        			"pixels": 1, 
+        			"pos1": [121, 60], 
+        			"pos2": [121, 60], 
+        			"loc": [6, 33], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 100, 
+        			"pixels": 1, 
+        			"pos1": [535, 43], 
+        			"pos2": [535, 43], 
+        			"loc": [30, 34], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 97, 
+        			"pixels": 1, 
+        			"pos1": [362, 612], 
+        			"pos2": [362, 612], 
+        			"loc": [20, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 98, 
+        			"pixels": 1, 
+        			"pos1": [34, 561], 
+        			"pos2": [34, 561], 
+        			"loc": [1, 4], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 101, 
+        			"pixels": 1, 
+        			"pos1": [138, 9], 
+        			"pos2": [138, 9], 
+        			"loc": [7, 36], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 99, 
+        			"pixels": 1, 
+        			"pos1": [500, 405], 
+        			"pos2": [500, 405], 
+        			"loc": [28, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 102, 
+        			"pixels": 1, 
+        			"pos1": [500, 285], 
+        			"pos2": [500, 285], 
+        			"loc": [28, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 100, 
+        			"pixels": 1, 
+        			"pos1": [483, 526], 
+        			"pos2": [483, 526], 
+        			"loc": [27, 6], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 101, 
+        			"pixels": 1, 
+        			"pos1": [448, 630], 
+        			"pos2": [448, 630], 
+        			"loc": [25, 0], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 103, 
+        			"pixels": 1, 
+        			"pos1": [190, 164], 
+        			"pos2": [190, 164], 
+        			"loc": [10, 27], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 104, 
+        			"pixels": 1, 
+        			"pos1": [69, 181], 
+        			"pos2": [69, 181], 
+        			"loc": [3, 26], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 102, 
+        			"pixels": 1, 
+        			"pos1": [466, 595], 
+        			"pos2": [466, 595], 
+        			"loc": [26, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 103, 
+        			"pixels": 1, 
+        			"pos1": [552, 457], 
+        			"pos2": [552, 457], 
+        			"loc": [31, 10], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 104, 
+        			"pixels": 1, 
+        			"pos1": [207, 509], 
+        			"pos2": [207, 509], 
+        			"loc": [11, 7], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 105, 
+        			"pixels": 1, 
+        			"pos1": [328, 612], 
+        			"pos2": [328, 612], 
+        			"loc": [18, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 106, 
+        			"pixels": 1, 
+        			"pos1": [586, 440], 
+        			"pos2": [586, 440], 
+        			"loc": [33, 11], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 105, 
+        			"pixels": 1, 
+        			"pos1": [276, 216], 
+        			"pos2": [276, 216], 
+        			"loc": [15, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 107, 
+        			"pixels": 1, 
+        			"pos1": [121, 492], 
+        			"pos2": [121, 492], 
+        			"loc": [6, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 106, 
+        			"pixels": 1, 
+        			"pos1": [379, 78], 
+        			"pos2": [379, 78], 
+        			"loc": [21, 32], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 108, 
+        			"pixels": 1, 
+        			"pos1": [345, 354], 
+        			"pos2": [345, 354], 
+        			"loc": [19, 16], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 107, 
+        			"pixels": 1, 
+        			"pos1": [121, 95], 
+        			"pos2": [121, 95], 
+        			"loc": [6, 31], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 109, 
+        			"pixels": 1, 
+        			"pos1": [552, 595], 
+        			"pos2": [552, 595], 
+        			"loc": [31, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 108, 
+        			"pixels": 1, 
+        			"pos1": [517, 78], 
+        			"pos2": [517, 78], 
+        			"loc": [29, 32], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 110, 
+        			"pixels": 1, 
+        			"pos1": [466, 423], 
+        			"pos2": [466, 423], 
+        			"loc": [26, 12], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 109, 
+        			"pixels": 1, 
+        			"pos1": [466, 95], 
+        			"pos2": [466, 95], 
+        			"loc": [26, 31], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 111, 
+        			"pixels": 1, 
+        			"pos1": [448, 405], 
+        			"pos2": [448, 405], 
+        			"loc": [25, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 110, 
+        			"pixels": 1, 
+        			"pos1": [483, 112], 
+        			"pos2": [483, 112], 
+        			"loc": [27, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 112, 
+        			"pixels": 1, 
+        			"pos1": [34, 509], 
+        			"pos2": [34, 509], 
+        			"loc": [1, 7], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 113, 
+        			"pixels": 1, 
+        			"pos1": [207, 405], 
+        			"pos2": [207, 405], 
+        			"loc": [11, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 114, 
+        			"pixels": 1, 
+        			"pos1": [604, 336], 
+        			"pos2": [604, 336], 
+        			"loc": [34, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 111, 
+        			"pixels": 1, 
+        			"pos1": [586, 95], 
+        			"pos2": [586, 95], 
+        			"loc": [33, 31], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 115, 
+        			"pixels": 1, 
+        			"pos1": [414, 561], 
+        			"pos2": [414, 561], 
+        			"loc": [23, 4], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 112, 
+        			"pixels": 1, 
+        			"pos1": [69, 198], 
+        			"pos2": [69, 198], 
+        			"loc": [3, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 116, 
+        			"pixels": 1, 
+        			"pos1": [552, 474], 
+        			"pos2": [552, 474], 
+        			"loc": [31, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 113, 
+        			"pixels": 1, 
+        			"pos1": [362, 43], 
+        			"pos2": [362, 43], 
+        			"loc": [20, 34], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 117, 
+        			"pixels": 1, 
+        			"pos1": [190, 526], 
+        			"pos2": [190, 526], 
+        			"loc": [10, 6], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 118, 
+        			"pixels": 1, 
+        			"pos1": [34, 371], 
+        			"pos2": [34, 371], 
+        			"loc": [1, 15], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 119, 
+        			"pixels": 1, 
+        			"pos1": [69, 595], 
+        			"pos2": [69, 595], 
+        			"loc": [3, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 114, 
+        			"pixels": 1, 
+        			"pos1": [121, 267], 
+        			"pos2": [121, 267], 
+        			"loc": [6, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 115, 
+        			"pixels": 1, 
+        			"pos1": [552, 233], 
+        			"pos2": [552, 233], 
+        			"loc": [31, 23], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 120, 
+        			"pixels": 1, 
+        			"pos1": [466, 492], 
+        			"pos2": [466, 492], 
+        			"loc": [26, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 116, 
+        			"pixels": 1, 
+        			"pos1": [517, 26], 
+        			"pos2": [517, 26], 
+        			"loc": [29, 35], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 117, 
+        			"pixels": 1, 
+        			"pos1": [207, 216], 
+        			"pos2": [207, 216], 
+        			"loc": [11, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 121, 
+        			"pixels": 1, 
+        			"pos1": [328, 492], 
+        			"pos2": [328, 492], 
+        			"loc": [18, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 122, 
+        			"pixels": 1, 
+        			"pos1": [310, 354], 
+        			"pos2": [310, 354], 
+        			"loc": [17, 16], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 118, 
+        			"pixels": 1, 
+        			"pos1": [52, 26], 
+        			"pos2": [52, 26], 
+        			"loc": [2, 35], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 119, 
+        			"pixels": 1, 
+        			"pos1": [552, 78], 
+        			"pos2": [552, 78], 
+        			"loc": [31, 32], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 123, 
+        			"pixels": 1, 
+        			"pos1": [448, 492], 
+        			"pos2": [448, 492], 
+        			"loc": [25, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 124, 
+        			"pixels": 1, 
+        			"pos1": [69, 388], 
+        			"pos2": [69, 388], 
+        			"loc": [3, 14], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 125, 
+        			"pixels": 1, 
+        			"pos1": [86, 336], 
+        			"pos2": [86, 336], 
+        			"loc": [4, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 120, 
+        			"pixels": 1, 
+        			"pos1": [586, 267], 
+        			"pos2": [586, 267], 
+        			"loc": [33, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 126, 
+        			"pixels": 1, 
+        			"pos1": [69, 336], 
+        			"pos2": [69, 336], 
+        			"loc": [3, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 121, 
+        			"pixels": 1, 
+        			"pos1": [224, 60], 
+        			"pos2": [224, 60], 
+        			"loc": [12, 33], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 122, 
+        			"pixels": 1, 
+        			"pos1": [397, 95], 
+        			"pos2": [397, 95], 
+        			"loc": [22, 31], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 127, 
+        			"pixels": 1, 
+        			"pos1": [103, 423], 
+        			"pos2": [103, 423], 
+        			"loc": [5, 12], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 128, 
+        			"pixels": 1, 
+        			"pos1": [86, 561], 
+        			"pos2": [86, 561], 
+        			"loc": [4, 4], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 123, 
+        			"pixels": 1, 
+        			"pos1": [345, 9], 
+        			"pos2": [345, 9], 
+        			"loc": [19, 36], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 124, 
+        			"pixels": 1, 
+        			"pos1": [155, 285], 
+        			"pos2": [155, 285], 
+        			"loc": [8, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 125, 
+        			"pixels": 1, 
+        			"pos1": [259, 164], 
+        			"pos2": [259, 164], 
+        			"loc": [14, 27], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 129, 
+        			"pixels": 1, 
+        			"pos1": [207, 612], 
+        			"pos2": [207, 612], 
+        			"loc": [11, 1], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 126, 
+        			"pixels": 1, 
+        			"pos1": [621, 147], 
+        			"pos2": [621, 147], 
+        			"loc": [35, 28], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 130, 
+        			"pixels": 1, 
+        			"pos1": [172, 336], 
+        			"pos2": [172, 336], 
+        			"loc": [9, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 127, 
+        			"pixels": 1, 
+        			"pos1": [431, 233], 
+        			"pos2": [431, 233], 
+        			"loc": [24, 23], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 128, 
+        			"pixels": 1, 
+        			"pos1": [552, 198], 
+        			"pos2": [552, 198], 
+        			"loc": [31, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 129, 
+        			"pixels": 1, 
+        			"pos1": [535, 302], 
+        			"pos2": [535, 302], 
+        			"loc": [30, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 131, 
+        			"pixels": 1, 
+        			"pos1": [345, 457], 
+        			"pos2": [345, 457], 
+        			"loc": [19, 10], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 130, 
+        			"pixels": 1, 
+        			"pos1": [448, 250], 
+        			"pos2": [448, 250], 
+        			"loc": [25, 22], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 131, 
+        			"pixels": 1, 
+        			"pos1": [569, 43], 
+        			"pos2": [569, 43], 
+        			"loc": [32, 34], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 132, 
+        			"pixels": 1, 
+        			"pos1": [362, 405], 
+        			"pos2": [362, 405], 
+        			"loc": [20, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 133, 
+        			"pixels": 1, 
+        			"pos1": [328, 405], 
+        			"pos2": [328, 405], 
+        			"loc": [18, 13], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 132, 
+        			"pixels": 1, 
+        			"pos1": [310, 302], 
+        			"pos2": [310, 302], 
+        			"loc": [17, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 133, 
+        			"pixels": 1, 
+        			"pos1": [138, 78], 
+        			"pos2": [138, 78], 
+        			"loc": [7, 32], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 134, 
+        			"pixels": 1, 
+        			"pos1": [397, 216], 
+        			"pos2": [397, 216], 
+        			"loc": [22, 24], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 135, 
+        			"pixels": 1, 
+        			"pos1": [621, 78], 
+        			"pos2": [621, 78], 
+        			"loc": [35, 32], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 134, 
+        			"pixels": 1, 
+        			"pos1": [586, 388], 
+        			"pos2": [586, 388], 
+        			"loc": [33, 14], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 135, 
+        			"pixels": 1, 
+        			"pos1": [586, 354], 
+        			"pos2": [586, 354], 
+        			"loc": [33, 16], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 136, 
+        			"pixels": 1, 
+        			"pos1": [414, 129], 
+        			"pos2": [414, 129], 
+        			"loc": [23, 29], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 137, 
+        			"pixels": 1, 
+        			"pos1": [69, 112], 
+        			"pos2": [69, 112], 
+        			"loc": [3, 30], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 138, 
+        			"pixels": 1, 
+        			"pos1": [121, 164], 
+        			"pos2": [121, 164], 
+        			"loc": [6, 27], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 139, 
+        			"pixels": 1, 
+        			"pos1": [431, 26], 
+        			"pos2": [431, 26], 
+        			"loc": [24, 35], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 136, 
+        			"pixels": 1, 
+        			"pos1": [517, 595], 
+        			"pos2": [517, 595], 
+        			"loc": [29, 2], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 137, 
+        			"pixels": 1, 
+        			"pos1": [500, 388], 
+        			"pos2": [500, 388], 
+        			"loc": [28, 14], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 138, 
+        			"pixels": 1, 
+        			"pos1": [621, 526], 
+        			"pos2": [621, 526], 
+        			"loc": [35, 6], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 139, 
+        			"pixels": 1, 
+        			"pos1": [155, 336], 
+        			"pos2": [155, 336], 
+        			"loc": [8, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 140, 
+        			"pixels": 1, 
+        			"pos1": [259, 285], 
+        			"pos2": [259, 285], 
+        			"loc": [14, 20], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 141, 
+        			"pixels": 1, 
+        			"pos1": [535, 198], 
+        			"pos2": [535, 198], 
+        			"loc": [30, 25], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 142, 
+        			"pixels": 1, 
+        			"pos1": [362, 9], 
+        			"pos2": [362, 9], 
+        			"loc": [20, 36], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 143, 
+        			"pixels": 1, 
+        			"pos1": [69, 9], 
+        			"pos2": [69, 9], 
+        			"loc": [3, 36], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 144, 
+        			"pixels": 1, 
+        			"pos1": [483, 26], 
+        			"pos2": [483, 26], 
+        			"loc": [27, 35], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 140, 
+        			"pixels": 1, 
+        			"pos1": [310, 561], 
+        			"pos2": [310, 561], 
+        			"loc": [17, 4], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 141, 
+        			"pixels": 1, 
+        			"pos1": [414, 440], 
+        			"pos2": [414, 440], 
+        			"loc": [23, 11], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 142, 
+        			"pixels": 1, 
+        			"pos1": [224, 371], 
+        			"pos2": [224, 371], 
+        			"loc": [12, 15], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 145, 
+        			"pixels": 1, 
+        			"pos1": [34, 250], 
+        			"pos2": [34, 250], 
+        			"loc": [1, 22], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 143, 
+        			"pixels": 1, 
+        			"pos1": [586, 336], 
+        			"pos2": [586, 336], 
+        			"loc": [33, 17], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 146, 
+        			"pixels": 1, 
+        			"pos1": [241, 164], 
+        			"pos2": [241, 164], 
+        			"loc": [13, 27], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 147, 
+        			"pixels": 1, 
+        			"pos1": [500, 267], 
+        			"pos2": [500, 267], 
+        			"loc": [28, 21], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 144, 
+        			"pixels": 1, 
+        			"pos1": [483, 509], 
+        			"pos2": [483, 509], 
+        			"loc": [27, 7], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 145, 
+        			"pixels": 1, 
+        			"pos1": [466, 543], 
+        			"pos2": [466, 543], 
+        			"loc": [26, 5], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 148, 
+        			"pixels": 1, 
+        			"pos1": [586, 302], 
+        			"pos2": [586, 302], 
+        			"loc": [33, 19], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 146, 
+        			"pixels": 1, 
+        			"pos1": [569, 543], 
+        			"pos2": [569, 543], 
+        			"loc": [32, 5], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 147, 
+        			"pixels": 1, 
+        			"pos1": [397, 492], 
+        			"pos2": [397, 492], 
+        			"loc": [22, 8], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 149, 
+        			"pixels": 1, 
+        			"pos1": [69, 129], 
+        			"pos2": [69, 129], 
+        			"loc": [3, 29], 
+        			"strand": 1, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 148, 
+        			"pixels": 1, 
+        			"pos1": [586, 630], 
+        			"pos2": [586, 630], 
+        			"loc": [33, 0], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}, 
+			{
+        			"address": 149, 
+        			"pixels": 1, 
+        			"pos1": [34, 474], 
+        			"pos2": [34, 474], 
+        			"loc": [1, 9], 
+        			"strand": 0, 
+        			"type": "linear"
+        		}
+	],	
+	"labels_enable": false, 
+    	"locked": true, 
+    	"name": "Sim", 
+    	"strand-settings": [
+    		{
+    			"color-mode": "RGB8", 
+    			"enabled": true, 
+    			"id": 0
+    		},
+    		{
+    			"color-mode": "RGB8", 
+    			"enabled": true, 
+    			"id": 1
+    		}
+    	]
 }

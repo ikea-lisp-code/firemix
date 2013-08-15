@@ -1,14 +1,13 @@
 {
     "file-type": "settings", 
     "last-playlist": "default", 
-    "last-scene": "single", 
+    "last-scene": "demo", 
     "mixer": {
         "last_playlist": "default", 
         "onset-holdoff": 0.1, 
-        "paused": true, 
         "preset-duration": 10.0, 
         "shuffle": false, 
-        "tick-rate": 40.0, 
+        "tick-rate": 42, 
         "transition": "Dissolve", 
         "transition-duration": 2.5, 
         "transition-slop": 1.0
@@ -23,10 +22,9 @@
             }, 
             {
                 "color-mode": "RGB8", 
-                "enabled": false, 
+                "enabled": true, 
                 "host": "172.16.0.32", 
                 "port": 3020
-                "name": "pi"
             }
         ]
     }
