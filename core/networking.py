@@ -24,15 +24,20 @@ class Networking:
     def open_socket(self):
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
+    def write_commands(self, commands):
+        """TODO implement"""
+        pass
+
     @profile
-    def write(self, buffer):
+    def write_buffer(self, buffer):
         """
         Performs a bulk strand write.
         Decodes the HLS-Float data according to client settings
         """
         strand_settings = self._app.scene.get_strand_settings()
 
-        buffer_rgb = hls_to_rgb(buffer) * 255
+        # Protect against presets or transitions that write float data.
+        buffer_rgb = np.int_(hls_to_rgb(buffer) * 255)
 
         def fill_packet(intbuffer, start, end, offset, packet, swap_order=False):
             for pixel_index, pixel in enumerate(intbuffer[start:end]):

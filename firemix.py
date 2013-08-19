@@ -22,6 +22,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Firelight mixer and preset host")
     parser.add_argument("scene", type=str, help="Scene file to load (create scenes with FireSim)")
     parser.add_argument("--playlist", type=str, help="Playlist file to load", default=None)
+    parser.add_argument("--speech_layer", action='store_const', const=True, default=False, help="Enable speech layer.")
+    parser.add_argument("--speech_playlist", type=str, help="Playlist file to load for the speech layer.", default=None)
     parser.add_argument("--profile", action='store_const', const=True, default=False, help="Enable profiling")
     parser.add_argument("--yappi", action='store_const', const=True, default=False, help="Enable YAPPI")
     parser.add_argument("--nogui", action='store_const', const=True, default=False, help="Disable GUI")
@@ -29,6 +31,7 @@ if __name__ == "__main__":
     parser.add_argument("--verbose", action='store_const', const=True, default=False, help="Enable verbose log output")
     parser.add_argument("--noaudio", action='store_const', const=True, default=False, help="Disable audio processing client")
     parser.add_argument("--osc_port", type=int, default=2447, help="OSC server port")
+    parser.add_argument("--mixxx_osc_port", type=int, default=2448, help="Mixxx OSC server port")
     parser.add_argument("--noosc", action='store_const', const=True, default=False, help="Disable OSC server")
 
     args = parser.parse_args()

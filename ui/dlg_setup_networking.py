@@ -7,7 +7,7 @@ class DlgSetupNetworking(QtGui.QDialog, Ui_DlgSetupNetworking):
 
     def __init__(self, parent=None):
         super(DlgSetupNetworking, self).__init__(parent)
-        self.playlist = parent._app.playlist
+        self.playlist = parent._mixer.default_layer()._playlist
         self.setupUi(self)
         self.app = parent._app
 

@@ -7,7 +7,7 @@ class DlgAddPreset(QtGui.QDialog, Ui_DlgAddPreset):
 
     def __init__(self, parent=None):
         super(DlgAddPreset, self).__init__(parent)
-        self.playlist = parent._app.playlist
+        self.playlist = parent._mixer.default_layer()._playlist
         self.setupUi(self)
 
         # Populate preset list

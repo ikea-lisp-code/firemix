@@ -1,5 +1,6 @@
 import math
 import numpy as np
+from collections import defaultdict
 
 from lib.raw_preset import RawPreset
 from lib.parameters import StringParameter, FloatParameter, HLSParameter, IntParameter
@@ -103,8 +104,7 @@ class PositionDonutParticles(RawPreset):
     def setup(self):
         self.particles = []
         self.max_distance = 0
-        self.feature_value = None
-        self.feature_value_triggered = False
+        self.feature_value_triggered = defaultdict(lambda: False)
         self.add_parameter(StringParameter('feature', 'beat'))
         self.add_parameter(FloatParameter('speed', 100))
         self.add_parameter(FloatParameter('width', 5))
@@ -166,18 +166,18 @@ class PositionDonutParticles(RawPreset):
         if feature['feature'] != self.feature:
             return
 
-        self.feature_value = feature['value']
-
-        if not self.feature_value:
-            self.feature_value_triggered = False
-            return
-
-        # We already processed this feature.
-        if self.feature_value_triggered:
-            return
+        feature_value = feature['value']
 
         group = feature['group']
         audio_emitter = self._mixer.audio_emitter(group)
+
+        if not feature_value:
+            self.feature_value_triggered[group] = False
+            return
+
+        # We already processed this feature.
+        if self.feature_value_triggered[group]:
+            return
 
         position = audio_emitter.position()
         if position is None:
@@ -190,4 +190,4 @@ class PositionDonutParticles(RawPreset):
 
         self.particles.append(PositionDonutParticles.DonutParticle(
             position, fade_colors, color_steps))
-        self.feature_value_triggered = True
+        self.feature_value_triggered[group] = True

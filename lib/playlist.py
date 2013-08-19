@@ -3,6 +3,8 @@ import gc
 import logging
 import random
 
+from PySide import QtCore
+
 from lib.json_dict import JSONDict
 from lib.preset_loader import PresetLoader
 
@@ -14,11 +16,17 @@ class Playlist(JSONDict):
     Manages the available presets and the current playlist of presets.
     """
 
-    def __init__(self, app):
+    class Notifier(QtCore.QObject):
+        playlist_changed = QtCore.Signal()
+
+    def __init__(self, app, name, last_playlist_settings_key):
         self._app = app
-        self.name = app.args.playlist
+        self._notifier = Playlist.Notifier()
+        self._last_playlist_settings_key = last_playlist_settings_key
+        self.name = name
         if self.name is None:
-            self.name = self._app.settings.get("mixer").get("last_playlist", "default")
+            self.name = self._app.settings.get("mixer").get(
+                self.last_playlist_settings_key, "default")
         filepath = os.path.join(os.getcwd(), "data", "playlists", "".join([self.name, ".json"]))
         JSONDict.__init__(self, 'playlist', filepath, True)
 
@@ -46,6 +54,8 @@ class Playlist(JSONDict):
         self._shuffle_list = []
 
         self.generate_playlist()
+
+        self._notifier.playlist_changed.emit()
         return True
 
     def generate_playlist(self):
@@ -105,6 +115,7 @@ class Playlist(JSONDict):
         self.generate_playlist()
         self._active_index = old_active % len(self._playlist)
         self._next_index = old_next % len(self._playlist)
+        self._notifier.playlist_changed.emit()
 
     def save(self):
         log.info("Saving playlist")
@@ -121,7 +132,7 @@ class Playlist(JSONDict):
             playlist.append(playlist_entry)
         self.data['playlist'] = playlist
         # Superclass write to file
-        self._app.settings.get("mixer")["last_playlist"] = self.name
+        self._app.settings.get("mixer")[self._last_playlist_settings_key] = self.name
         JSONDict.save(self)
 
     def get(self):
@@ -141,7 +152,7 @@ class Playlist(JSONDict):
         else:
             self._next_index = (self._next_index + direction) % len(self._playlist)
 
-        self._app.playlist_changed.emit()
+        self._notifier.playlist_changed.emit()
 
     def __len__(self):
         return len(self._playlist)
@@ -187,7 +198,7 @@ class Playlist(JSONDict):
         self._active_index = idx % len(self._playlist)
         self._next_index = (self._active_index + 1) % len(self._playlist)
         self.get_active_preset()._reset()
-        self._app.playlist_changed.emit()
+        self._notifier.playlist_changed.emit()
 
     def set_active_preset_by_name(self, name):
         #TODO: Support transitions other than jump cut
@@ -196,11 +207,15 @@ class Playlist(JSONDict):
                 preset._reset()
                 self._active_index = i
                 self._app.mixer._elapsed = 0.0  # Hack
+                self._notifier.playlist_changed.emit()
+                return
 
     def set_next_preset_by_name(self, name):
         for i, preset in enumerate(self._playlist):
             if preset.get_name() == name:
                 self._next_index = i
+                self._notifier.playlist_changed.emit()
+                return
 
     def reorder_playlist_by_names(self, names):
         """
@@ -213,6 +228,7 @@ class Playlist(JSONDict):
             new.append(current[name])
 
         self._playlist = new
+        self._notifier.playlist_changed.emit()
 
     def get_available_presets(self):
         return self._preset_classes.keys()
@@ -244,6 +260,7 @@ class Playlist(JSONDict):
         if self._active_index == self._next_index:
             self._next_index = (self._next_index + 1) % len(self._playlist)
 
+        self._notifier.playlist_changed.emit()
         return True
 
     def remove_preset(self, name):
@@ -260,6 +277,8 @@ class Playlist(JSONDict):
 
         self._next_index = self._next_index % len(self._playlist)
         self._active_index = self._active_index % len(self._playlist)
+        self._notifier.playlist_changed.emit()
+        return True
 
     def clone_preset(self, old_name):
         old = self.get_preset_by_name(old_name)
@@ -270,17 +289,20 @@ class Playlist(JSONDict):
 
         for name, param in old.get_parameters().iteritems():
             new.parameter(name).set_from_str(param.get_as_str())
+        self._notifier.playlist_changed.emit()
 
     def clear_playlist(self):
         self._playlist = []
         self._active_index = 0
         self._next_index = 0
+        self._notifier.playlist_changed.emit()
 
     def rename_preset(self, old_name, new_name):
         pl = [i for i, p in enumerate(self._playlist) if p.get_name() == old_name]
         if len(pl) != 1:
             return False
         self._playlist[pl[0]].set_name(new_name)
+        self._notifier.playlist_changed.emit()
 
     def generate_default_playlist(self):
         """
@@ -292,6 +314,7 @@ class Playlist(JSONDict):
             inst = self._preset_classes[cn](self._app.mixer, name=name)
             inst.setup()
             self._playlist.append(inst)
+        self._notifier.playlist_changed.emit()
 
     def suggest_preset_name(self, classname):
         """

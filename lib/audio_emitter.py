@@ -38,6 +38,7 @@ class AudioEmitter(object):
     def __init__(self, group):
         self._group = group
         self._features = collections.defaultdict(lambda: {})
+        self._target_position = (0, 0, 0)
 
     def group(self):
         return self.group
@@ -49,6 +50,12 @@ class AudioEmitter(object):
         """Returns the latest value of the feature or None if no value is
         available."""
         return self._features[feature_name].get('value', None)
+
+    def set_target_position(self, pos):
+        self._target_position = pos
+
+    def target_position(self):
+        return self._target_position
 
     def position(self):
         """Convenience function for getting the position of the AudioEmitter in
