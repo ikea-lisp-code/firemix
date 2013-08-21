@@ -1,7 +1,8 @@
 import unittest
+import json
 
 
-class Fixture:
+class Fixture(object):
     """
     Basic model for a 1D linear fixture
     """
@@ -13,6 +14,7 @@ class Fixture:
         self.pixels = data.get("pixels", 0)
         self.pos1 = tuple(data.get("pos1", (0, 0)))
         self.pos2 = tuple(data.get("pos2", (0, 0)))
+        self.grid_loc = tuple(data.get("grid_loc", (0, 0)))
 
     def __repr__(self):
         return "Fixture%d [%d:%d]" % (self.pixels, self.strand, self.address)

@@ -31,6 +31,8 @@ class Scene(JSONDict):
         self._all_pixels = None
         self._all_pixel_locations = None
         self._all_pixels_raw = None
+        # Access to fixtures by physical location
+        self._fixture_pos1_dict = {}
 
     def warmup(self):
         """
@@ -92,7 +94,7 @@ class Scene(JSONDict):
 
     def fixture(self, strand, address):
         """
-        Returns a reference to a given fixture
+        Returns a reference to a given fixture.
         """
         fix = self._fixture_dict.get((strand, address), None)
         if fix is None:
@@ -100,6 +102,19 @@ class Scene(JSONDict):
                 if f.strand == strand and f.address == address:
                     fix = f
                     self._fixture_dict[(strand, address)] = f
+        return fix
+
+    def fixture_by_pos1(self, pos1):
+        """
+        Returns a reference to a given fixture using the pixel's pos1
+        in scene coordinates.
+        """ 
+        fix = self._fixture_dict.get(pos1, None)
+        if fix is None:
+            for fix in self.fixtures():
+                if f.pos1 == pos1:
+                    fix = f
+                    self._fixture_pos1_dict[pos1] = f
         return fix
 
     def fixture_hierarchy(self):

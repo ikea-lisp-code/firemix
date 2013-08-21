@@ -64,7 +64,6 @@ class Playlist(JSONDict):
 
         for entry in self._playlist_data:
             if entry['classname'] in self._preset_classes:
-
                 inst = self._preset_classes[entry['classname']](self._app.mixer, name=entry['name'])
                 inst._reset()
 

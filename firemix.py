@@ -33,6 +33,9 @@ if __name__ == "__main__":
     parser.add_argument("--osc_port", type=int, default=2447, help="OSC server port")
     parser.add_argument("--mixxx_osc_port", type=int, default=2448, help="Mixxx OSC server port")
     parser.add_argument("--noosc", action='store_const', const=True, default=False, help="Disable OSC server")
+    parser.add_argument("--route_layer", type=str, help="Specify a route layer.")
+    parser.add_argument("--route_playlist", type=str, help="Playlist for the route layer.")
+    
 
     args = parser.parse_args()
 
