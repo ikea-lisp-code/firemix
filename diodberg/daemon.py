@@ -59,37 +59,41 @@ class DMXSerialRenderer(object):
 
     __dmx_buffer_size = 512
     __default_channel_val = 0
-    __device_name = "/dev/ttyUSB0"
     __baud_rateHz = 250000
     __timeout = 3.
     __bytesize = serial.EIGHTBITS
     __parity = serial.PARITY_NONE
     __stopbits = serial.STOPBITS_TWO
+    __universe_to_device = {0: "/dev/ttyUSB0", 
+                            1: "/dev/ttyUSB1"}
 
-    __slots__ = {'__port'}
+    __slots__ = {'__ports'}
     
-    def __init__(self):
-        super(DMXSerialRenderer, self).__init__()
-        self.__port = serial.Serial(port = DMXSerialRenderer.__device_name)
-        self.__port.baudrate = DMXSerialRenderer.__baud_rateHz
-        self.__port.bytesize = DMXSerialRenderer.__bytesize
-        self.__port.parity = DMXSerialRenderer.__parity
-        self.__port.stopbits = DMXSerialRenderer.__stopbits
-        self.__port.timeout = DMXSerialRenderer.__timeout
+    def __init__(self, num_universes = 2):
+        self.__ports = {}
+        for universe in xrange(num_universes):
+            device_name = DMXSerialRenderer.__universe_to_device[universe]
+            self.__ports[universe] = serial.Serial(port = device_name)
+            self.__ports[universe].baudrate = DMXSerialRenderer.__baud_rateHz
+            self.__ports[universe].bytesize = DMXSerialRenderer.__bytesize
+            self.__ports[universe].parity = DMXSerialRenderer.__parity
+            self.__ports[universe].stopbits = DMXSerialRenderer.__stopbits
+            self.__ports[universe].timeout = DMXSerialRenderer.__timeout
 
     def send_dmx(self, universe, buf):
         """ Sends the DMX packet over serial.
         """ 
-        self.__port.baudrate = DMXSerialRenderer.__baud_rateHz/2
-        self.__port.write(chr(0))
-        self.__port.baudrate = DMXSerialRenderer.__baud_rateHz
-        self.__port.write(chr(0))
-        self.__port.write(buf)
+        self.__ports[universe].baudrate = DMXSerialRenderer.__baud_rateHz/2
+        self.__ports[universe].write(chr(0))
+        self.__ports[universe].baudrate = DMXSerialRenderer.__baud_rateHz
+        self.__ports[universe].write(chr(0))
+        self.__ports[universe].write(buf)
 
     def close(self):
         """ Close the serial port.
         """
-        self.__port.close()
+        for port in self.__ports:
+            port.close()
         
     def __del__(self):
         self.close()
