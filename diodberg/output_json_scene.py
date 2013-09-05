@@ -16,7 +16,7 @@ def random_location(x_lower = 0, x_upper = 100, y_lower = 0, y_upper = 100):
     y = random.randint(y_lower, y_upper - 1)
     return (x, y)
 
-def make_locations(x_width = 36, y_width = 18, count = 250):
+def make_locations(x_width = 36, y_width = 18, count = 320):
     bottom = set()
     top = set()
     while len(bottom) < count:
@@ -56,7 +56,7 @@ def main(scene_name, filename):
     for loc in locations:
         x, y = loc
         xp, yp = xc + x*run, yc - y*run
-        strand = 0 if count < 125 else 1
+        strand = 0 if count < 320/2 else 1
         # TODO: Remove if using second half.
         # strand = 0 if y < 18 else 1
         address = i if strand is 0 else j
