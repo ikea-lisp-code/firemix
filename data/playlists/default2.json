@@ -1,0 +1,10 @@
+{
+    "file-type": "playlist", 
+    "playlist": [
+        {
+            "classname": "RouteManager", 
+            "name": "RouteManager-1", 
+            "params": {}
+        }
+    ]
+}

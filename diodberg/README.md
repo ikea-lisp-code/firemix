@@ -31,3 +31,11 @@ and writing them over DMX-512 via USB/serial. Some additional notes:
   sudo make install" work for development version at
   http://downloads.sourceforge.net/liblo/liblo-0.26.tar.gz , followed by "sudo
   pip install pyliblo". Also profilehoooks: "sudo pip installprofilehooks".
+
+* To run firemix with a routes, the following command line should work:
+
+         python firemix.py test_september_2013.txt --playlist default1 --route_layer test_september_2013.txt-routes --route_playlist default2
+
+  provided that you have the test_september_2013.txt.json in data/scenes/ and
+  test_september_2013.txt-routes.json in data/routes/. The default (RGB) color
+  for a route is red.

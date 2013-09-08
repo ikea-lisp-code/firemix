@@ -1,0 +1,195 @@
+{
+    "backdrop_enable": true, 
+    "backdrop_filename": "grid.png", 
+    "center": [
+        320, 
+        320
+    ], 
+    "extents": [
+        640, 
+        640
+    ], 
+    "file-type": "scene", 
+    "fixtures": [
+        {
+            "address": 0, 
+            "grid_loc": [
+                0, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                17.25, 
+                630.0
+            ], 
+            "pos2": [
+                17.25, 
+                630.0
+            ], 
+            "strand": 0
+        }, 
+        {
+            "address": 1, 
+            "grid_loc": [
+                1, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                34.5, 
+                630.0
+            ], 
+            "pos2": [
+                34.5, 
+                630.0
+            ], 
+            "strand": 0
+        }, 
+        {
+            "address": 2, 
+            "grid_loc": [
+                2, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                51.75, 
+                630.0
+            ], 
+            "pos2": [
+                51.75, 
+                630.0
+            ], 
+            "strand": 0
+        }, 
+        {
+            "address": 3, 
+            "grid_loc": [
+                3, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                69.0, 
+                630.0
+            ], 
+            "pos2": [
+                69.0, 
+                630.0
+            ], 
+            "strand": 0
+        }, 
+        {
+            "address": 4, 
+            "grid_loc": [
+                4, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                86.25, 
+                630.0
+            ], 
+            "pos2": [
+                86.25, 
+                630.0
+            ], 
+            "strand": 0
+        }, 
+        {
+            "address": 5, 
+            "grid_loc": [
+                0, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                120.75, 
+                630.0
+            ], 
+            "pos2": [
+                120.75, 
+                630.0
+            ], 
+            "strand": 0
+        }, 
+        {
+            "address": 6, 
+            "grid_loc": [
+                1, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                138.0, 
+                630.0
+            ], 
+            "pos2": [
+                138.0, 
+                630.0
+            ], 
+            "strand": 0
+        }, 
+        {
+            "address": 7, 
+            "grid_loc": [
+                2, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                155.25, 
+                630.0
+            ], 
+            "pos2": [
+                155.25, 
+                630.0
+            ], 
+            "strand": 0
+        }, 
+        {
+            "address": 8, 
+            "grid_loc": [
+                3, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                172.5, 
+                630.0
+            ], 
+            "pos2": [
+                172.5, 
+                630.0
+            ], 
+            "strand": 0
+        }, 
+        {
+            "address": 9, 
+            "grid_loc": [
+                4, 
+                0
+            ], 
+            "pixels": 1, 
+            "pos1": [
+                189.75, 
+                630.0
+            ], 
+            "pos2": [
+                189.75, 
+                630.0
+            ], 
+            "strand": 0
+        }
+    ], 
+    "labels_enable": false, 
+    "locked": true, 
+    "name": "diodberg/test_september_2013.txt", 
+    "strand-settings": [
+        {
+            "color-mode": "RGB8", 
+            "enabled": true, 
+            "id": 0
+        }
+    ]
+}

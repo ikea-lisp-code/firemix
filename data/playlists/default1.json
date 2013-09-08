@@ -1,0 +1,12 @@
+{
+    "file-type": "playlist", 
+    "playlist": [
+        {
+            "classname": "RGBFade", 
+            "name": "RGBFade-1", 
+            "params": {
+                "speed": "0.2"
+            }
+        }
+    ]
+}
