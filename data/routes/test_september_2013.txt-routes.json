@@ -1,0 +1,85 @@
+{
+    "file-type": "routes", 
+    "name": "diodberg/test_september_2013.txt", 
+    "routes": {
+        "1": {
+            "active": true, 
+            "color": [
+                1, 
+                0, 
+                0
+            ], 
+            "fixtures": [
+                {
+                    "address": 3, 
+                    "grid_loc": [
+                        3, 
+                        0
+                    ], 
+                    "pixels": 1, 
+                    "pos1": [
+                        69.0, 
+                        630.0
+                    ], 
+                    "pos2": [
+                        69.0, 
+                        630.0
+                    ], 
+                    "strand": 0
+                }, 
+                {
+                    "address": 4, 
+                    "grid_loc": [
+                        4, 
+                        0
+                    ], 
+                    "pixels": 1, 
+                    "pos1": [
+                        86.25, 
+                        630.0
+                    ], 
+                    "pos2": [
+                        86.25, 
+                        630.0
+                    ], 
+                    "strand": 0
+                }, 
+                {
+                    "address": 5, 
+                    "grid_loc": [
+                        0, 
+                        0
+                    ], 
+                    "pixels": 1, 
+                    "pos1": [
+                        120.75, 
+                        630.0
+                    ], 
+                    "pos2": [
+                        120.75, 
+                        630.0
+                    ], 
+                    "strand": 0
+                }, 
+                {
+                    "address": 6, 
+                    "grid_loc": [
+                        1, 
+                        0
+                    ], 
+                    "pixels": 1, 
+                    "pos1": [
+                        138.0, 
+                        630.0
+                    ], 
+                    "pos2": [
+                        138.0, 
+                        630.0
+                    ], 
+                    "strand": 0
+                }
+            ], 
+            "index": 1
+        }
+    }
+}
