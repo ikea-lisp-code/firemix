@@ -1,0 +1,15 @@
+{
+    "file-type": "playlist", 
+    "playlist": [
+        {
+            "classname": "RouteManager", 
+            "name": "RouteManager-1", 
+            "params": {
+         	“init-colors”: "{1: (0,0.5,1), 2: (1,0.5,1)}",
+                “final-colors: "{1: (1,0.5,1), 2: (0,0.5,1)}",
+                "steps": "256",
+                “speeds”: "{1: 1.0, 2: 1.0}”,
+	    }
+        }
+    ]
+}

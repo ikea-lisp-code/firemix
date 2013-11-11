@@ -10,7 +10,7 @@ from lib.color_fade import ColorFade
 
 class StripeGradient(RawPreset):
     _fader = None
-    
+
     def setup(self):
         self.add_parameter(FloatParameter('speed', 0.01))
         self.add_parameter(FloatParameter('angle-speed', 0.1))
@@ -34,13 +34,13 @@ class StripeGradient(RawPreset):
         self.pixel_distances = np.sqrt(np.square(x) + np.square(y))
         self.pixel_angles = (math.pi + np.arctan2(y, x)) / (2 * math.pi)
         self.pixel_distances /= max(self.pixel_distances)
-            
+
         self.parameter_changed(None)
 
     def parameter_changed(self, parameter):
         fade_colors = ast.literal_eval(self.parameter('color-gradient').get())
         self._fader = ColorFade(fade_colors, self.parameter('posterization').get())
-    
+
     def reset(self):
         pass
 
